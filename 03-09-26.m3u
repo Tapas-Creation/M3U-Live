@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://tinyurl.com/39f2p348" group-title="Bangladesh*",Somoy TV
+#EXTINF:-1 tvg-logo="https://tinyurl.com/39f2p348" group-title="Bangladesh*89",Somoy TV
 http://103.165.93.31:8095/somoyTv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/39f2p348" group-title="Bangladesh*",BTV
 http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8
@@ -35,5 +35,3 @@ http://103.165.93.31:8095/jalshaMovies/index.m3u8
 http://103.165.93.31:8095/enter10Bangla/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/39f2p348" group-title="Bangladesh*",Star Gold HD
 http://66.102.126.10:8000/play/a00f/index.m3u8
-#EXTINF:-1 tvg-logo="https://tinyurl.com/39f2p348" group-title="Bangladesh*",Star Gold Selected
-http://66.102.126.10:8000/play/a01s/index.m3u8
