@@ -165,8 +165,6 @@ http://premiumtvs.space/live/YqXTywueEV/damp2purchase/434.ts
 https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Drama 24
 https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",STAR PLUS
-http://202.70.146.135:8000/play/a009/index.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",ENT | Dangal TV
 https://live-dangal.akamaized.net/liveabr/pub-iodang10p4al/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",w_300,q_85/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png" group-title="📺 Entertainment 🇧🇩",Zee Bangla HD
@@ -235,3 +233,37 @@ http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/7342/index.m3u8
 https://box.bbaria.net:8083/Jalsha_Movie/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Jalsha SD
 http://premiumtvs.space/live/1Aoen7elp5/IgMJ60tmAa/8540.ts
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Gold 2
+http://103.155.18.186:8000/play/a02d/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🎬 Movies",Movies Now HD
+http://103.155.18.186:8000/play/a057/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🎬 Movies",Star Movies Select HD
+http://103.155.18.186:8000/play/a06q/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🎬 Movies",MNX
+http://103.155.18.186:8000/play/a052/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",Star Sports 1 Hindi HD
+http://103.155.18.186:8000/play/a01e/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",Star Sports 1 HD
+http://103.155.18.186:8000/play/a00a/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",Star Sports Select 2 HD
+http://103.155.18.186:8000/play/a0ap/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",Star Sports Select 1 HD
+http://103.155.18.186:8000/play/a0aq/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 1 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6123/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 3 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6124/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 4 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6125/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 5 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6126/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 6 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6127/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="🏆 All Sports",beIN SPORTS 7 HD
+http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6128/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Plus SD
+http://103.151.60.162:2122/play/a0fo/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Plus HD (Tata play)3
+https://go.skym3u.top/live/69346/3b1f0d3d095a7070746d7d5a515c456b744f5d525b595d6f02001d463f0a006252456f7b6b363d09040a5a32711454.m3u8?t=6167&s=9b7&id=jtqx.m3u
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Plus HD (Tata play)4
+http://66.102.126.10:8000/play/a008/index.m3u8
