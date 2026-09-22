@@ -265,3 +265,5 @@ http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/6128/index.m3u8
 http://202.70.146.135:8000/play/a0ac/index.m3u8
 #EXTINF:-1 tvg-id="StarPlus.in" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="📺 Entertainment 🇧🇩",Star Plus
 http://202.70.146.135:8000/play/a009/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="𝐃𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐨𝐫𝐲",Discovery_Channel_Bengali
+http://premiumtvs.space:80/live/samsung2861/manager5554/406.ts
