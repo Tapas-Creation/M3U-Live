@@ -1,0 +1,173 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SHOMOY TV HD
+http://198.195.239.50:8095/somoyTv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",BTV
+http://198.195.239.50:8095/btv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR JALSHA HD
+http://198.195.239.50:8095/starJalsha/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",JALSHA MOVIES HD
+http://198.195.239.50:8095/jalshaMovies/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZEE BANGLA HD
+http://198.195.239.50:8095/zeeBangla/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLOR BANGLA HD
+http://198.195.239.50:8095/colorsBangla/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLOR BANGLA CHINEMA HD
+http://198.195.239.50:8095/colorsBanglaChinema/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY AATH
+http://198.195.239.50:8095/sonyAath/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SANGEET BANGLA
+http://198.195.239.50:8095/sangeetBangla/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ENTER 10 BANGLA
+http://198.195.239.50:8095/enter10Bangla/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",DISCOVERY HD
+http://198.195.239.50:8095/discovery/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NATIONAL GEOGRAPHIC HD
+http://198.195.239.50:8095/nationalGeographic/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ANIMAL PLANET HD
+http://198.195.239.50:8095/animalPlanet/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",TRAVEL XP
+http://198.195.239.50:8095/travelXp/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",CARTOON NETWORK HD
+http://198.195.239.50:8095/cartoonNetwork/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",POGO
+http://198.195.239.50:8095/pogo/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",DURANTA
+http://198.195.239.50:8095/duranta/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NICK
+http://198.195.239.50:8095/nick/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NICK JR
+http://198.195.239.50:8095/nickJr/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONIC
+http://198.195.239.50:8095/sonic/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY YAY
+http://198.195.239.50:8095/sonyYay/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY-SPORTS.5HD
+http://198.195.239.50:8095/SONY-SPORTS.5HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",BTV.HD
+http://198.195.239.50:8095/BTV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ETV.BANGLA.HD
+http://198.195.239.50:8095/ETV.BANGLA.HD/tracks-v1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",DEEPTOTV.HD
+http://198.195.239.50:8095/DEEPTOTV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",DBC.NEWS.HD
+http://198.195.239.50:8095/DBC.NEWS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",BOISAKHI.TV.HD
+http://198.195.239.50:8095/BOISAKHI.TV.HD/tracks-a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",EAKHON.TV.HD
+http://198.195.239.50:8095/EAKHON.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",EKATTOR.TV.HD
+http://198.195.239.50:8095/EKATTOR.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLORS.HD
+http://198.195.239.50:8095/COLORS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ANT.PICTURS.HD
+http://198.195.239.50:8095/ANT.PICTURS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.BBC.EARTH.HD
+http://198.195.239.50:8095/SONY.BBC.EARTH.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZEE.TV.HD
+http://198.195.239.50:8095/ZEE.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",CARTON.NETWORK.HD
+http://198.195.239.50:8095/CARTON.NETWORK.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",TLC.HD
+http://198.195.239.50:8095/TLC.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLORS.CINEPLEX.HD
+http://198.195.239.50:8095/COLORS.CINEPLEX.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.ENT.HD
+http://198.195.239.50:8095/SONY.ENT.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLORS.BANGLA.HD
+http://198.195.239.50:8095/COLORS.BANGLA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZEE.CINEMA.HD
+http://198.195.239.50:8095/ZEE.CINEMA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZEE.BANGLA.HD
+http://198.195.239.50:8095/ZEE.BANGLA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",HISTORY.TV.18.HD
+http://198.195.239.50:8095/HISTORY.TV.18.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.SPORTS.SEL.2.HD
+http://198.195.239.50:8095/STAR.SPORTS.SEL.2.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SUN.BANGLA.HD
+http://198.195.239.50:8095/SUN.BANGLA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",JALSHA.MOVIES.HD
+http://198.195.239.50:8095/JALSHA.MOVIES.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.GOLD.HD
+http://198.195.239.50:8095/STAR.GOLD.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.MAX.HD
+http://198.195.239.50:8095/SONY.MAX.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",DISCOVERY.HD
+http://198.195.239.50:8095/DISCOVERY.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NATGEO.WILD.HD
+http://198.195.239.50:8095/NATGEO.WILD.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.PLUS.HD
+http://198.195.239.50:8095/STAR.PLUS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NATGEO.HD
+http://198.195.239.50:8095/NATGEO.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ANIMAL.PLANET.HD
+http://198.195.239.50:8095/ANIMAL.PLANET.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.MOVIES.SEL.HD
+http://198.195.239.50:8095/STAR.MOVIES.SEL.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.SPORTS-SEL1.HD
+http://198.195.239.50:8095/STAR.SPORTS-SEL1.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.SPORTS2.HD
+http://198.195.239.50:8095/STAR.SPORTS2.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.SPORTS2.HD
+http://198.195.239.50:8095/SONY.SPORTS2.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.SPORTS.3
+http://198.195.239.50:8095/SONY.SPORTS.3/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.SPORTS1.HD
+http://198.195.239.50:8095/STAR.SPORTS1.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR-SPORTS.3
+http://198.195.239.50:8095/STAR-SPORTS.3/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.PIX.HD
+http://198.195.239.50:8095/SONY.PIX.HD/tracks-v1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.JALSHA.HD
+http://198.195.239.50:8095/STAR.JALSHA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",MNX.HD
+http://198.195.239.50:8095/MNX.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ROMEDY.NOW
+http://198.195.239.50:8095/ROMEDY.NOW/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",MN.PLUS.HD
+http://198.195.239.50:8095/MN.PLUS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.MOVIES.HD
+http://198.195.239.50:8095/STAR.MOVIES.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",MOVIES.NOW.HD
+http://198.195.239.50:8095/MOVIES.NOW.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",EUROSPORTS.HD
+http://198.195.239.50:8095/EUROSPORTS.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",AND.PRIVE.HD
+http://198.195.239.50:8095/AND.PRIVE.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZOOM.MUSIC
+http://198.195.239.50:8095/ZOOM.MUSIC/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ZEE.BANGLA.CINEMA
+http://198.195.239.50:8095/ZEE.BANGLA.CINEMA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONY.AAT
+http://198.195.239.50:8095/SONY.AAT/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SONIC
+http://198.195.239.50:8095/SONIC/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NICK
+http://198.195.239.50:8095/NICK/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",COLORS.BANGLA.CINEMA
+http://198.195.239.50:8095/COLORS.BANGLA.CINEMA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",HUNGAMA
+http://198.195.239.50:8095/HUNGAMA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ETV.BAL.BHARAT
+http://198.195.239.50:8095/ETV.BAL.BHARAT/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",NAGORIK.TV.HD
+http://198.195.239.50:8095/NAGORIK.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",T-SPORTS-HD
+http://198.195.239.50:8095/T-SPORTS-HD/tracks-a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",SUPER.HUNGAMA
+http://198.195.239.50:8095/SUPER.HUNGAMA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",MASRANGA.TV.HD
+http://198.195.239.50:8095/MASRANGA.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ATN.BANGLA.HD
+http://198.195.239.50:8095/ATN.BANGLA.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",CHANNEL.I.HD
+http://198.195.239.50:8095/CHANNEL.I.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",CHANNEL.24.HD
+http://198.195.239.50:8095/CHANNEL.24.HD/tracks-a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",ENTER10.BANGLA
+http://198.195.239.50:8095/ENTER10.BANGLA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",Lotus.TV.HD
+http://198.195.239.50:8095/Lotus.TV.HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",PTV-SPORTS-HD
+http://198.195.239.50:8095/PTV-SPORTS-HD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Live TV by Tapas",STAR.BHARAT.HD
+http://198.195.239.50:8095/STAR.BHARAT.HD/tracks-v1a1/mono.m3u8
