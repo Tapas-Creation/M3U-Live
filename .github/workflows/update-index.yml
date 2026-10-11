@@ -1,0 +1,64 @@
+name: Generate Index JSON
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate JSON file
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+
+            const rootDir = ".";
+            const excludeDirs = [".github", "images", ".git"];
+            const excludeFiles = ["index.json", "index.html", "script.js", "style.css", "README.md"];
+
+            function scanDirectory(dir, base = "") {
+              let results = [];
+              const list = fs.readdirSync(dir);
+              list.forEach(file => {
+                const filePath = path.join(dir, file);
+                const stat = fs.statSync(filePath);
+                const relativePath = path.join(base, file);
+
+                if (stat.isDirectory()) {
+                  if (!excludeDirs.includes(file.toLowerCase()) && !file.startsWith(".")) {
+                    results = results.concat(scanDirectory(filePath, relativePath));
+                  }
+                } else {
+                  if (!excludeFiles.includes(file) && !file.startsWith(".")) {
+                    results.push({
+                      name: file,
+                      path: relativePath.replace(/\\/g, "/"),
+                      folder: base.replace(/\\/g, "/"),
+                      size: stat.size,
+                      time: stat.mtimeMs
+                    });
+                  }
+                }
+              });
+              return results;
+            }
+
+            const files = scanDirectory(rootDir);
+            fs.writeFileSync("index.json", JSON.stringify(files, null, 2));
+            console.log("index.json generated successfully!");
+          '
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update index.json [skip ci]" && git push)
