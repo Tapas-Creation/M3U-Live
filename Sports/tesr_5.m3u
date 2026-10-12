@@ -1,0 +1,73 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://imgur.com/ocyTxpw.png" group-title="SkyM3U Promo",Skym3u Official - Visit Skym3u.dev
+https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus English 🏆
+https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇦🇷 Argentina
+https://6c849fb3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctbXhfRklGQVBsdXNTcGFuaXNoLTFfSExT/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇫🇷 France
+https://37b4c228.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇩🇪 Germany
+https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇮🇪 Itali
+https://5d95f7d7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWl0X0ZJRkFQbHVzSXRhbGlhbl9ITFM/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇧🇷 Brazil
+https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇪🇸 Spain
+https://d63fabad.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWVzX0ZJRkFQbHVzU3BhbmlzaF9ITFM/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", FIFA Plus 🇺🇸 USA
+https://d2w9q46ikgrcwx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-of5cbk3sav3w5/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/o5BoWU_BEz.png", Fox Sports 2 - (FIFA)
+https://go.skym3u.dev/live/3096b/1b150d30105557105e55570701445d4d391d00163417411b50470c420d170003433207124b6f0a011c5a520d49511a4b4c497d42564e7951574b0813130203020348597d44591b2555594c0b071345545a5e471425104c4171025b550f121a45015946121e7642585f210e1f434b4548410c5210114e7715554922570e1e08484611530e4a42497045534021560e1b0818101c.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/1oSRQnyUqK.jpg", Tyc Sports 🇦🇷 Argentina
+https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/1oSRQnyUqK.jpg", Tyc Sports C 🇦🇷 Argentina
+https://go.skym3u.dev/live/3096b/1b150d305940575b4b4f411203120a58365d1710304c4014565c460b5601174a5b220714562356070a511346620a090012037842534c724d1b0b.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/1oSRQnyUqK.jpg", Tyc Sports E 🇦🇷 Argentina
+http://wdp.joycalls.com/get
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/eYP_0o2cnt.jpg", DSports E 🇦🇷
+http://wdp.joycalls.com/get
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", Caze TV 🇧🇷 Brazil
+https://go.skym3u.dev/live/3096b/1b150d30105557104e45565a5f0209187346020b234d0c14505f474210001d07022e1615560d2d2028106b4e4505065c304d3a164e3a21190a276b7c7c66304042431470034c0f34174011514e465c4c02400614.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", Caze TV B - 🇧🇷 Brazil
+https://go.skym3u.dev/live/3096b/1b150d30105557104e45565a5f0209187346020b234d0c14505f474210001d07022e1615560d2d2028106b4e4505065c304d3a164e3a21190a276b7c7c663040301256252c352f6e0e5c0d07.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", Caze TV C - 🇧🇷 Brazil
+https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?amznDtid=AOAGZA014O5RE&encoding=segmentBase
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", Caze TV D - 🇧🇷 Brazil
+https://go.skym3u.dev/live/3096b/1b150d301055571045575007411f1a5a255d0715394d180f114b4a524f0c171d022e16155627111a55514357560d401f1a5a255c02152906010c4c05474511075c1642235c0409275a1c0f094554474d0006070336424e1c75530e1d5c4f4547005d4a474a2116594c24550d4b0b194614035915424f235c021c2e0041154f4e1c450f151d375829175c380f2228227e1a12102d5a21360a251d0216240a011f025946430f0a1d076e210004.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png",BTV 🇧🇩 Bangladesh
+https://go.skym3u.dev/live/3096b/1b150d3010555710455456010005105e300a4f1e30000b16114446504d0d03180134054e4877535657505f5754171b5c1a42241619572d501a40.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png",Somoy TV 🇧🇩 Bangladesh
+https://go.skym3u.dev/live/3096b/1b150d3010555710455456010005105e300a4f1e30000b16114446504d0d03180134054e4877535d57505f5754171b5c1a42241619572d501a40.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://i.ibb.co.com/vnbkF0r/fifa-world-cup-2026-logo-png-seeklogo-665644.png", T Sports HD 🇧🇩 Bangladesh
+https://go.skym3u.dev/live/3096b/1b150d305940570d1d0d15505b5d441d6e415656144e3c08505857574d061d1749385d0c4a355b.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports  - 🇫🇷 France
+https://go.skym3u.dev/live/3096b/1b150d305940570e1e160a505c4a5d196e42564e6f565a4110475341051b00.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports  🇫🇷 France
+https://go.skym3u.dev/live/3096b/1b150d305940570e1e160a505c4a5d196e42564e6f565a4110434d4007175d1e1f354b.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 1  🇷🇸 Serbia
+https://go.skym3u.dev/live/3096b/1b150d305940574a4b0d4b0c031a1d4972474f092d4c1f145e530c15535f425c1f7543234a7255293a0c1e651020575c054524160e572d501a40.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 2 🇷🇸 Serbia
+https://go.skym3u.dev/live/3096b/1b150d305940574a4b0d4b0c031a1d4972474f092d4c1f145e530c15535f415c1f7543234a7255293a0c1e651020575c054524160e572d501a40.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/Tf3GP8uGY_.jpg", TUDN 🇲🇽 Mexico
+http://177.10.184.60:8002/play/a013/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/Tf3GP8uGY_.jpg", TUDN B 1080 🇲🇽 Mexico
+https://streaming.alwaysdata.net/
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 1
+http://27.124.71.27/beIN_Sports_1/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 2
+http://27.124.71.27/beIN_Sports_2/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 3
+http://27.124.71.27/beIN_Sports_3/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", Bein Sports 4
+https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/kIiut6WBq0.jpg", beIN Sports Xtra
+https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/HMfImxTUXS.jpg", Cricket Gold
+https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/bfc6a36e-c250-4afe-b6c9-2bc57855bb7d/4.m3u8
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/u7SqaFacbH.png", TSN 1
+https://go.skym3u.dev/live/3096b/1b150d30105557105e55570701445d4d391d00163417411b50470c501101425c452e1704016e0e5c0d07.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/u7SqaFacbH.png", TSN 2
+https://go.skym3u.dev/live/3096b/1b150d30105557105e55570701445d4d391d00163417411b50470c501101415c452e1704016e0e5c0d07.m3u8?t=1696&s=84d&id=dhet.m3u
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/u7SqaFacbH.png", TSN 3
+https://go.skym3u.dev/live/3096b/1b150d30105557105e55570701445d4d391d00163417411b50470c501101405c452e1704016e0e5c0d07.m3u8?t=1696&s=84d&id=dhet.m3u
