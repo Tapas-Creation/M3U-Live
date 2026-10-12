@@ -1,0 +1,24 @@
+https://tapas-iptv.github.io/IPTV-Network.com/
+
+SERVER: http://pinkponyclub.online:80
+    ID: live/DGaffSr23
+  CODE: ayisLWpRZw
+  
+SERVER: http://fortv.cc:8080
+    ID: yd6H5yb2kK
+  CODE: nrkVd2ex3X
+  
+SERVER: http://dsmqbfez.pardns.com
+    ID: 6CTB9BKG
+  CODE: 4Q7Y9DFW
+  
+SERVER: http://yolomax.pro
+    ID: A1U3S8XPVM58B23
+  CODE: iHeFx423Ac
+  
+  
+  
+  
+  
+  
+  
