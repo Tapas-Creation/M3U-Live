@@ -16,7 +16,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Generate data.json via Node/Bash
+    - name: Generate data.json
       run: |
         node -e '
         const fs = require("fs");
@@ -40,7 +40,6 @@ jobs:
             categories = ["Movies", "Sports", "Skym3u.dev"];
         }
 
-        // হুবহু আপনার script.js এর extractHashId লজিক
         function extractHashId(filename) {
             let nameWithoutExt = filename.replace(/\.[^/.]+$/, "");
             let match = nameWithoutExt.match(/_([a-zA-Z0-9]+)$/);
@@ -56,7 +55,6 @@ jobs:
             let imagesList = [];
             let imagesDir = path.join(catPath, "images");
 
-            // ফোল্ডার থেকে ফাইল এবং ইমেজ আলাদা করা (আপনার script.js এর হুবহু লজিক)
             for (let itemName of folderItems) {
                 let itemFullPath = path.join(catPath, itemName);
                 if (fs.lstatSync(itemFullPath).isFile()) {
@@ -69,7 +67,6 @@ jobs:
                 }
             }
 
-            // images ফোল্ডার স্ক্যান করা
             if (fs.existsSync(imagesDir) && fs.lstatSync(imagesDir).isDirectory()) {
                 let imgFiles = fs.readdirSync(imagesDir);
                 for (let imgName of imgFiles) {
@@ -83,7 +80,6 @@ jobs:
                 }
             }
 
-            // আপনার script.js এর মতো imagesMap তৈরি
             let imagesMap = {};
             for (let img of imagesList) {
                 let hashId = extractHashId(img.name);
@@ -95,31 +91,10 @@ jobs:
                 }
             }
 
-            let filesWithTime = [];
-            for (let file of validFiles) {
-                let relPath = `${catName}/${file.name}`;
-                let timestamp = 0;
-                try {
-                    let { execSync } = require("child_process");
-                    let tStr = execSync(`git log -1 --format=%ct -- "${relPath}"`).toString().trim();
-                    if (tStr) timestamp = parseInt(tStr) * 1000;
-                } catch(e) {}
-
-                filesWithTime.push({
-                    file: file,
-                    time: timestamp
-                });
-            }
-
-            filesWithTime.sort((a, b) => b.time - a.time);
-
-            for (let i = 0; i < filesWithTime.length; i++) {
-                let itemObj = filesWithTime[i];
-                let file = itemObj.file;
-                let commitTime = itemObj.time;
+            for (let i = 0; i < validFiles.length; i++) {
+                let file = validFiles[i];
                 let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${file.name}`;
 
-                // আপনার script.js এর হুবহু আইডি ম্যাচিং লজিক
                 let fileHashId = extractHashId(file.name);
                 let matchedImgObj = (fileHashId && imagesMap[fileHashId]) ? imagesMap[fileHashId] : null;
 
@@ -133,11 +108,12 @@ jobs:
 
                 let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
 
-                // আপনার script.js এর হুবহু টাইটেল এবং ডিসপ্লে নেম লজিক
-                let rawNameToClean = matchedImgObj ? matchedImgObj.name : file.name;
-                let nameWithoutExt = rawNameToClean.replace(/\.[^/.]+$/, "");
-                let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
-                let titleText = cleanBaseName.replace(/[-_]/g, " ").trim();
+                let titleText = "Live Stream";
+                if (matchedImgObj) {
+                    let imgNameWithoutExt = matchedImgObj.name.replace(/\.[^/.]+$/, "");
+                    let cleanImgBase = imgNameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
+                    titleText = cleanImgBase.replace(/[-_]/g, " ").trim();
+                }
 
                 let extMatch = file.name.match(/\.[^/.]+$/);
                 let fileExt = extMatch ? extMatch[0] : "";
@@ -150,13 +126,10 @@ jobs:
                     download_url: downloadUrl,
                     category: catName,
                     image: matchedImgUrl,
-                    title: titleText || "Live Stream",
-                    timestamp: commitTime
+                    title: titleText || "Live Stream"
                 });
             }
         }
-
-        collectedFiles.sort((a, b) => b.timestamp - a.timestamp);
 
         let finalData = {
             categories: categories,
@@ -164,7 +137,7 @@ jobs:
         };
 
         fs.writeFileSync("data.json", JSON.stringify(finalData, null, 4), "utf-8");
-        console.log("data.json generated successfully using exact script.js logic!");
+        console.log("data.json generated successfully!");
         '
 
     - name: Commit and push if data.json changed
