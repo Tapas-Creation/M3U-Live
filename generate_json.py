@@ -30,32 +30,37 @@ def generate_json():
         for img in images_list:
             hash_id = extract_hash_id(img)
             if hash_id:
-                images_map[hash_id] = f"images/{img}"
+                images_map[hash_id] = img
 
         cat_files = []
         for index, file_name in enumerate(valid_files):
             file_hash_id = extract_hash_id(file_name)
-            matched_img = None
+            matched_img_name = None
+            
             if file_hash_id and file_hash_id in images_map:
-                matched_img = images_map[file_hash_id]
+                matched_img_name = images_map[file_hash_id]
             elif images_list:
-                fallback_img = images_list[index % len(images_list)]
-                matched_img = f"images/{fallback_img}"
+                matched_img_name = images_list[index % len(images_list)]
 
-            raw_name_to_clean = os.path.basename(matched_img) if matched_img else file_name
+            # টাইটেল তৈরির জন্য ছবি বা ফাইলের নাম পরিষ্কার করা
+            raw_name_to_clean = matched_img_name if matched_img_name else file_name
             name_without_ext = os.path.splitext(raw_name_to_clean)[0]
             clean_base_name = re.sub(r'_[a-zA-Z0-9]+$', '', name_without_ext)
             title_text = re.sub(r'[-_]', ' ', clean_base_name).strip()
 
+            # স্ক্রিনে দেখানোর জন্য ফাইলের নাম (এক্সটেনশনসহ, শুধু শেষের ট্যাগ বাদ)
             file_ext = os.path.splitext(file_name)[1]
             name_without_file_ext = os.path.splitext(file_name)[0]
             clean_file_name = re.sub(r'_[a-zA-Z0-9]+$', '', name_without_file_ext) + file_ext
+
+            # ইমেজ পাথ এবং ডাউনলোড লিংকের সঠিক স্ট্রাকচার
+            img_relative_path = f"{cat}/images/{matched_img_name}" if matched_img_name else ""
 
             cat_files.append({
                 "name": file_name,
                 "displayName": clean_file_name,
                 "download_url": f"{cat}/{file_name}",
-                "image": f"{cat}/images/{os.path.basename(matched_img)}" if matched_img else "https://via.placeholder.com/300x160?text=No+Preview",
+                "image": img_relative_path,
                 "title": title_text or "Live Stream",
                 "category": cat
             })
@@ -64,7 +69,7 @@ def generate_json():
 
     with open(os.path.join(rootDir, 'playlist.json'), 'w', encoding='utf-8') as f:
         json.dump(all_playlist_data, f, ensure_ascii=False, indent=2)
-    print("playlist.json generated successfully via Python!")
+    print("playlist.json generated successfully with correct image paths!")
 
 if __name__ == '__main__':
     generate_json()
