@@ -19,8 +19,10 @@ def generate_json():
         cat_path = os.path.join(rootDir, cat)
         items = os.listdir(cat_path)
 
+        # শুধু .m3u বা অন্যান্য ফাইলগুলো ফিল্টার করা
         valid_files = [f for f in items if os.path.isfile(os.path.join(cat_path, f)) and not f.lower().endswith(('.png', '.jpg', '.jpeg', '.webp')) and not f.startswith('.')]
 
+        # images ফোল্ডার চেক করা
         images_dir = os.path.join(cat_path, 'images')
         images_list = []
         if os.path.exists(images_dir) and os.path.isdir(images_dir):
@@ -37,12 +39,12 @@ def generate_json():
             file_hash_id = extract_hash_id(file_name)
             matched_img_name = None
             
-            # আইডি ম্যাচিং লজিক (হুবহু আপনার আগের নিয়মে)
+            # আইডি ম্যাচিং
             if file_hash_id and file_hash_id in images_map:
                 matched_img_name = images_map[file_hash_id]
             elif images_list:
-                fallback_img = images_list[index % len(images_list)]
-                matched_img_name = fallback_img
+                # ফলব্যাক হিসেবে ক্রমানুসারে ছবি নেওয়া
+                matched_img_name = images_list[index % len(images_list)]
 
             # টাইটেল ক্লিন করার লজিক
             raw_name_to_clean = matched_img_name if matched_img_name else file_name
@@ -50,12 +52,12 @@ def generate_json():
             clean_base_name = re.sub(r'_[a-zA-Z0-9]+$', '', name_without_ext)
             title_text = re.sub(r'[-_]', ' ', clean_base_name).strip()
 
-            # ফাইলের ডিসপ্লে নাম (এক্সটেনশন থাকবে, শেষের আইডি _8 বাদ যাবে)
+            # ফাইলের ডিসপ্লে নাম
             file_ext = os.path.splitext(file_name)[1]
             name_without_file_ext = os.path.splitext(file_name)[0]
             clean_file_name = re.sub(r'_[a-zA-Z0-9]+$', '', name_without_file_ext) + file_ext
 
-            # ছবির সঠিক রিলাটিভ পাথ
+            # ছবির সঠিক রিলাটিভ পাথ (যাতে সিডিএন থেকে সরাসরি লোড হতে পারে)
             img_path = f"{cat}/images/{matched_img_name}" if matched_img_name else ""
 
             cat_files.append({
@@ -71,7 +73,7 @@ def generate_json():
 
     with open(os.path.join(rootDir, 'playlist.json'), 'w', encoding='utf-8') as f:
         json.dump(all_playlist_data, f, ensure_ascii=False, indent=2)
-    print("playlist.json generated successfully!")
+    print("playlist.json generated successfully with images!")
 
 if __name__ == '__main__':
     generate_json()
