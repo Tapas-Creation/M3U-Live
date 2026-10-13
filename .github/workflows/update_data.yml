@@ -32,7 +32,7 @@ jobs:
         const items = fs.readdirSync(rootDir, { withFileTypes: true });
         for (let item of items) {
             if (item.isDirectory() && item.name.toLowerCase() !== "images" && !item.name.startsWith(".") && item.name !== ".github") {
-                categories.append ? categories.append(item.name) : categories.push(item.name);
+                categories.push(item.name);
             }
         }
 
@@ -69,7 +69,9 @@ jobs:
             let imagesMap = {};
             for (let img of imagesList) {
                 let hashId = extractHashId(img.name);
-                if (hashId) imagesMap[hashId] = img;
+                if (hashId) {
+                    imagesMap[hashId] = img;
+                }
             }
 
             let validFiles = folderItems.filter(f => {
@@ -88,14 +90,16 @@ jobs:
                 } catch(e) {}
 
                 let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${fName}`;
+                
                 let fileHashId = extractHashId(fName);
-                let matchedImgObj = fileHashId ? imagesMap[fileHashId] : null;
+                let matchedImgObj = (fileHashId && imagesMap[fileHashId]) ? imagesMap[fileHashId] : null;
 
                 if (!matchedImgObj && imagesList.length > 0) {
                     matchedImgObj = imagesList[validFilesWithTime.length % imagesList.length];
                 }
 
                 let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
+                
                 let rawNameToClean = matchedImgObj ? matchedImgObj.name : fName;
                 let nameWithoutExt = path.basename(rawNameToClean, path.extname(rawNameToClean));
                 let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
@@ -128,7 +132,7 @@ jobs:
         };
 
         fs.writeFileSync("data.json", JSON.stringify(finalData, null, 4), "utf-8");
-        console.log("data.json generated successfully via Node.js!");
+        console.log("data.json generated successfully!");
         '
 
     - name: Commit and push if data.json changed
