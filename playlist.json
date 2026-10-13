@@ -4,7 +4,7 @@
       "name": "IPTV-NETWORK.m3u",
       "displayName": "IPTV-NETWORK.m3u",
       "download_url": "Auto Update/IPTV-NETWORK.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "IPTV NETWORK",
       "category": "Auto Update"
     }
@@ -14,7 +14,7 @@
       "name": "12-10-26_Skym3u-Link.m3u",
       "displayName": "12-10-26_Skym3u-Link.m3u",
       "download_url": "Skym3u.dev/12-10-26_Skym3u-Link.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "12 10 26 Skym3u Link",
       "category": "Skym3u.dev"
     },
@@ -22,7 +22,7 @@
       "name": "10-10-26_Link-1.m3u",
       "displayName": "10-10-26_Link-1.m3u",
       "download_url": "Skym3u.dev/10-10-26_Link-1.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "10 10 26 Link 1",
       "category": "Skym3u.dev"
     },
@@ -30,7 +30,7 @@
       "name": "IPTV-Network_by_tapas.m3u",
       "displayName": "IPTV-Network_by.m3u",
       "download_url": "Skym3u.dev/IPTV-Network_by_tapas.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "IPTV Network by",
       "category": "Skym3u.dev"
     },
@@ -38,7 +38,7 @@
       "name": "11-10-26_Link-1.m3u",
       "displayName": "11-10-26_Link-1.m3u",
       "download_url": "Skym3u.dev/11-10-26_Link-1.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "11 10 26 Link 1",
       "category": "Skym3u.dev"
     },
@@ -46,7 +46,7 @@
       "name": "11-10-26_Link-2.m3u",
       "displayName": "11-10-26_Link-2.m3u",
       "download_url": "Skym3u.dev/11-10-26_Link-2.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "11 10 26 Link 2",
       "category": "Skym3u.dev"
     }
@@ -56,7 +56,7 @@
       "name": "22_8.m3u",
       "displayName": "22.m3u",
       "download_url": "Sports/22_8.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "22",
       "category": "Sports"
     },
@@ -64,7 +64,7 @@
       "name": "52.m3u",
       "displayName": "52.m3u",
       "download_url": "Sports/52.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "52",
       "category": "Sports"
     },
@@ -72,7 +72,7 @@
       "name": "tesr_5.m3u",
       "displayName": "tesr.m3u",
       "download_url": "Sports/tesr_5.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "tesr",
       "category": "Sports"
     }
@@ -82,7 +82,7 @@
       "name": "Hindi_Movie_playlist.m3u",
       "displayName": "Hindi_Movie.m3u",
       "download_url": "Movies/Hindi_Movie_playlist.m3u",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "Hindi Movie",
       "category": "Movies"
     }
@@ -92,7 +92,7 @@
       "name": "IPTV-Network_Xtream.txt",
       "displayName": "IPTV-Network.txt",
       "download_url": "Xtream & Stalker/IPTV-Network_Xtream.txt",
-      "image": "https://via.placeholder.com/300x160?text=No+Preview",
+      "image": "",
       "title": "IPTV Network",
       "category": "Xtream & Stalker"
     }
