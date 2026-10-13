@@ -40,7 +40,7 @@ jobs:
             categories = ["Movies", "Sports", "Skym3u.dev"];
         }
 
-        // আপনার আসল script.js এর extractHashId ফাংশন হুবহু
+        // হুবহু আপনার script.js এর extractHashId লজিক
         function extractHashId(filename) {
             let nameWithoutExt = filename.replace(/\.[^/.]+$/, "");
             let match = nameWithoutExt.match(/_([a-zA-Z0-9]+)$/);
@@ -52,14 +52,29 @@ jobs:
             if (!fs.existsSync(catPath) || !fs.lstatSync(catPath).isDirectory()) continue;
 
             let folderItems = fs.readdirSync(catPath);
+            let validFiles = [];
             let imagesList = [];
             let imagesDir = path.join(catPath, "images");
+
+            // ফোল্ডার থেকে ফাইল এবং ইমেজ আলাদা করা (আপনার script.js এর হুবহু লজিক)
+            for (let itemName of folderItems) {
+                let itemFullPath = path.join(catPath, itemName);
+                if (fs.lstatSync(itemFullPath).isFile()) {
+                    let nameLower = itemName.toLowerCase();
+                    let isImage = /\.(png|jpg|jpeg|webp)$/i.test(nameLower);
+                    let isHidden = nameLower.startsWith(".");
+                    if (!isImage && !isHidden) {
+                        validFiles.push({ name: itemName });
+                    }
+                }
+            }
 
             // images ফোল্ডার স্ক্যান করা
             if (fs.existsSync(imagesDir) && fs.lstatSync(imagesDir).isDirectory()) {
                 let imgFiles = fs.readdirSync(imagesDir);
                 for (let imgName of imgFiles) {
-                    if (/\.(png|jpg|jpeg|webp)$/i.test(imgName.toLowerCase())) {
+                    let imgFullPath = path.join(imagesDir, imgName);
+                    if (fs.lstatSync(imgFullPath).isFile() && /\.(png|jpg|jpeg|webp)$/i.test(imgName)) {
                         imagesList.push({
                             name: imgName,
                             download_url: `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/images/${imgName}`
@@ -68,7 +83,7 @@ jobs:
                 }
             }
 
-            // আপনার script.js এর imagesMap লজিক হুবহু
+            // আপনার script.js এর মতো imagesMap তৈরি
             let imagesMap = {};
             for (let img of imagesList) {
                 let hashId = extractHashId(img.name);
@@ -80,45 +95,34 @@ jobs:
                 }
             }
 
-            // validFiles ফিল্টার (আপনার script.js এর লজিক অনুযায়ী)
-            let validFiles = folderItems.filter(f => {
-                let fPath = path.join(catPath, f);
-                let nameLower = f.toLowerCase();
-                let isImage = /\.(png|jpg|jpeg|webp)$/i.test(nameLower);
-                let isHidden = nameLower.startsWith(".");
-                return fs.lstatSync(fPath).isFile() && !isImage && !isHidden;
-            });
-
             let filesWithTime = [];
             for (let file of validFiles) {
-                let relPath = `${catName}/${file}`;
-                let commitTime = 0;
+                let relPath = `${catName}/${file.name}`;
+                let timestamp = 0;
                 try {
                     let { execSync } = require("child_process");
                     let tStr = execSync(`git log -1 --format=%ct -- "${relPath}"`).toString().trim();
-                    if (tStr) commitTime = parseInt(tStr) * 1000;
-                } catch (e) {}
+                    if (tStr) timestamp = parseInt(tStr) * 1000;
+                } catch(e) {}
 
                 filesWithTime.push({
-                    name: file,
-                    time: commitTime
+                    file: file,
+                    time: timestamp
                 });
             }
 
-            // টাইম অনুযায়ী সর্টিং
             filesWithTime.sort((a, b) => b.time - a.time);
 
             for (let i = 0; i < filesWithTime.length; i++) {
-                let fileObj = filesWithTime[i];
-                let fileName = fileObj.name;
-                let commitTime = fileObj.time;
-                let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${fileName}`;
+                let itemObj = filesWithTime[i];
+                let file = itemObj.file;
+                let commitTime = itemObj.time;
+                let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${file.name}`;
 
-                // ফাইলের নাম থেকে আইডি বের করে সরাসরি ম্যাপ থেকে নির্দিষ্ট ছবি তুলে নেওয়া (আপনার script.js লজিক)
-                let fileHashId = extractHashId(fileName);
+                // আপনার script.js এর হুবহু আইডি ম্যাচিং লজিক
+                let fileHashId = extractHashId(file.name);
                 let matchedImgObj = (fileHashId && imagesMap[fileHashId]) ? imagesMap[fileHashId] : null;
 
-                // যদি নির্দিষ্ট আইডি না মেলে, তবে ফলব্যাক হিসেবে প্রথম ছবি বা ডিফল্ট নেওয়া
                 if (!matchedImgObj && imagesList.length > 0) {
                     let fallbackImg = imagesList[i % imagesList.length];
                     matchedImgObj = {
@@ -129,20 +133,19 @@ jobs:
 
                 let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
 
-                // টাইটেল ক্লিন করার লজিক (আপনার script.js থেকে হুবহু নেওয়া)
-                let rawNameToClean = matchedImgObj ? matchedImgObj.name : fileName;
+                // আপনার script.js এর হুবহু টাইটেল এবং ডিসপ্লে নেম লজিক
+                let rawNameToClean = matchedImgObj ? matchedImgObj.name : file.name;
                 let nameWithoutExt = rawNameToClean.replace(/\.[^/.]+$/, "");
                 let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
                 let titleText = cleanBaseName.replace(/[-_]/g, " ").trim();
 
-                // ফাইলের প্রদর্শিত নাম (displayName) থেকে শুধুমাত্র এক্সটেনশন রেখে শেষের আন্ডারস্কোর ট্যাগ রিমুভ করা
-                let extMatch = fileName.match(/\.[^/.]+$/);
+                let extMatch = file.name.match(/\.[^/.]+$/);
                 let fileExt = extMatch ? extMatch[0] : "";
-                let nameWithoutFileExt = fileName.replace(/\.[^/.]+$/, "");
+                let nameWithoutFileExt = file.name.replace(/\.[^/.]+$/, "");
                 let cleanFileName = nameWithoutFileExt.replace(/_[a-zA-Z0-9]+$/, "") + fileExt;
 
                 collectedFiles.push({
-                    name: fileName,
+                    name: file.name,
                     displayName: cleanFileName,
                     download_url: downloadUrl,
                     category: catName,
