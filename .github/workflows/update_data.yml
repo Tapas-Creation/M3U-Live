@@ -14,15 +14,122 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # কমিট হিস্ট্রি রিড করার জন্য জরুরি
+        fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+    - name: Generate data.json via Node/Bash
+      run: |
+        node -e '
+        const fs = require("fs");
+        const path = require("path");
 
-    - name: Run JSON Generator Script
-      run: python generate_json.py
+        const DATA_USER = "Tapas-Creation";
+        const DATA_REPO = "M3U-Live";
+        const rootDir = ".";
+
+        let categories = [];
+        let collectedFiles = [];
+
+        const items = fs.readdirSync(rootDir, { withFileTypes: true });
+        for (let item of items) {
+            if (item.isDirectory() && item.name.toLowerCase() !== "images" && !item.name.startsWith(".") && item.name !== ".github") {
+                categories.append ? categories.append(item.name) : categories.push(item.name);
+            }
+        }
+
+        if (categories.length === 0) {
+            categories = ["Movies", "Sports", "Skym3u.dev"];
+        }
+
+        function extractHashId(filename) {
+            let nameWithoutExt = path.basename(filename, path.extname(filename));
+            let match = nameWithoutExt.match(/_([a-zA-Z0-9]+)$/);
+            return match ? match[1].trim() : null;
+        }
+
+        for (let catName of categories) {
+            let catPath = path.join(rootDir, catName);
+            if (!fs.existsSync(catPath) || !fs.lstatSync(catPath).isDirectory()) continue;
+
+            let folderItems = fs.readdirSync(catPath);
+            let imagesList = [];
+            let imagesDir = path.join(catPath, "images");
+
+            if (fs.existsSync(imagesDir) && fs.lstatSync(imagesDir).isDirectory()) {
+                let imgFiles = fs.readdirSync(imagesDir);
+                for (let imgName of imgFiles) {
+                    if (/\.(png|jpg|jpeg|webp)$/i.test(imgName)) {
+                        imagesList.push({
+                            name: imgName,
+                            download_url: `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/images/${imgName}`
+                        });
+                    }
+                }
+            }
+
+            let imagesMap = {};
+            for (let img of imagesList) {
+                let hashId = extractHashId(img.name);
+                if (hashId) imagesMap[hashId] = img;
+            }
+
+            let validFiles = folderItems.filter(f => {
+                let fPath = path.join(catPath, f);
+                return fs.lstatSync(fPath).isFile() && !/\.(png|jpg|jpeg|webp)$/i.test(f) && !f.startsWith(".");
+            });
+
+            let validFilesWithTime = [];
+            for (let fName of validFiles) {
+                let relPath = `${catName}/${fName}`;
+                let timestamp = 0;
+                try {
+                    let { execSync } = require("child_process");
+                    let tStr = execSync(`git log -1 --format=%ct -- "${relPath}"`).toString().trim();
+                    if (tStr) timestamp = parseInt(tStr) * 1000;
+                } catch(e) {}
+
+                let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${fName}`;
+                let fileHashId = extractHashId(fName);
+                let matchedImgObj = fileHashId ? imagesMap[fileHashId] : null;
+
+                if (!matchedImgObj && imagesList.length > 0) {
+                    matchedImgObj = imagesList[validFilesWithTime.length % imagesList.length];
+                }
+
+                let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
+                let rawNameToClean = matchedImgObj ? matchedImgObj.name : fName;
+                let nameWithoutExt = path.basename(rawNameToClean, path.extname(rawNameToClean));
+                let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
+                let titleText = cleanBaseName.replace(/[-_]/g, " ").trim();
+
+                let extMatch = path.extname(fName);
+                let nameWithoutFileExt = path.basename(fName, extMatch);
+                let cleanFileName = nameWithoutFileExt.replace(/_[a-zA-Z0-9]+$/, "") + extMatch;
+
+                validFilesWithTime.push({
+                    name: fName,
+                    displayName: cleanFileName,
+                    download_url: downloadUrl,
+                    category: catName,
+                    image: matchedImgUrl,
+                    title: titleText || "Live Stream",
+                    timestamp: timestamp
+                });
+            }
+
+            validFilesWithTime.sort((a, b) => b.timestamp - a.timestamp);
+            collectedFiles.push(...validFilesWithTime);
+        }
+
+        collectedFiles.sort((a, b) => b.timestamp - a.timestamp);
+
+        let finalData = {
+            categories: categories,
+            files: collectedFiles
+        };
+
+        fs.writeFileSync("data.json", JSON.stringify(finalData, null, 4), "utf-8");
+        console.log("data.json generated successfully via Node.js!");
+        '
 
     - name: Commit and push if data.json changed
       run: |
