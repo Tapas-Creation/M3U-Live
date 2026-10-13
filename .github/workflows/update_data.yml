@@ -40,9 +40,9 @@ jobs:
             categories = ["Movies", "Sports", "Skym3u.dev"];
         }
 
-        // ফাইলের নামের শেষাংশ থেকে আন্ডারস্কোরের পরের আইডি বের করার ফাংশন (যেমন: tesr_5.m3u থেকে 5)
+        // আপনার আসল script.js এর extractHashId ফাংশন হুবহু
         function extractHashId(filename) {
-            let nameWithoutExt = path.basename(filename, path.extname(filename));
+            let nameWithoutExt = filename.replace(/\.[^/.]+$/, "");
             let match = nameWithoutExt.match(/_([a-zA-Z0-9]+)$/);
             return match ? match[1].trim() : null;
         }
@@ -59,7 +59,7 @@ jobs:
             if (fs.existsSync(imagesDir) && fs.lstatSync(imagesDir).isDirectory()) {
                 let imgFiles = fs.readdirSync(imagesDir);
                 for (let imgName of imgFiles) {
-                    if (/\.(png|jpg|jpeg|webp)$/i.test(imgName)) {
+                    if (/\.(png|jpg|jpeg|webp)$/i.test(imgName.toLowerCase())) {
                         imagesList.push({
                             name: imgName,
                             download_url: `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/images/${imgName}`
@@ -68,78 +68,91 @@ jobs:
                 }
             }
 
-            // ইমেজগুলোর জন্য একটি ম্যাপ তৈরি করা, যেখানে কি (Key) হবে ইমেজের নামের আন্ডারস্কোর আইডি
+            // আপনার script.js এর imagesMap লজিক হুবহু
             let imagesMap = {};
             for (let img of imagesList) {
                 let hashId = extractHashId(img.name);
                 if (hashId) {
-                    imagesMap[hashId] = img;
+                    imagesMap[hashId] = {
+                        name: img.name,
+                        download_url: img.download_url
+                    };
                 }
             }
 
-            // মূল ফোল্ডারের ফাইলগুলো ফিল্টার করা (ছবি বা হিডেন ফাইল বাদ দিয়ে)
+            // validFiles ফিল্টার (আপনার script.js এর লজিক অনুযায়ী)
             let validFiles = folderItems.filter(f => {
                 let fPath = path.join(catPath, f);
-                return fs.lstatSync(fPath).isFile() && !/\.(png|jpg|jpeg|webp)$/i.test(f) && !f.startsWith(".");
+                let nameLower = f.toLowerCase();
+                let isImage = /\.(png|jpg|jpeg|webp)$/i.test(nameLower);
+                let isHidden = nameLower.startsWith(".");
+                return fs.lstatSync(fPath).isFile() && !isImage && !isHidden;
             });
 
-            for (let fName of validFiles) {
-                let relPath = `${catName}/${fName}`;
-                let timestamp = 0;
+            let filesWithTime = [];
+            for (let file of validFiles) {
+                let relPath = `${catName}/${file}`;
+                let commitTime = 0;
                 try {
                     let { execSync } = require("child_process");
                     let tStr = execSync(`git log -1 --format=%ct -- "${relPath}"`).toString().trim();
-                    if (tStr) timestamp = parseInt(tStr) * 1000;
-                } catch(e) {}
+                    if (tStr) commitTime = parseInt(tStr) * 1000;
+                } catch (e) {}
 
-                let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${fName}`;
-                
-                // ফাইলের নাম থেকে আইডি বের করা
-                let fileHashId = extractHashId(fName);
-                
-                // ঠিক এই আইডি দিয়ে imagesMap থেকে নির্দিষ্ট ইমেজটি খুঁজে বের করা
+                filesWithTime.push({
+                    name: file,
+                    time: commitTime
+                });
+            }
+
+            // টাইম অনুযায়ী সর্টিং
+            filesWithTime.sort((a, b) => b.time - a.time);
+
+            for (let i = 0; i < filesWithTime.length; i++) {
+                let fileObj = filesWithTime[i];
+                let fileName = fileObj.name;
+                let commitTime = fileObj.time;
+                let downloadUrl = `https://cdn.jsdelivr.net/gh/${DATA_USER}/${DATA_REPO}@main/${catName}/${fileName}`;
+
+                // ফাইলের নাম থেকে আইডি বের করে সরাসরি ম্যাপ থেকে নির্দিষ্ট ছবি তুলে নেওয়া (আপনার script.js লজিক)
+                let fileHashId = extractHashId(fileName);
                 let matchedImgObj = (fileHashId && imagesMap[fileHashId]) ? imagesMap[fileHashId] : null;
 
-                // যদি আইডি দিয়ে হুবহু ম্যাচ না পায়, তবে ফলব্যাক হিসেবে প্রথম ছবিটি বা ডিফল্ট নেবে
+                // যদি নির্দিষ্ট আইডি না মেলে, তবে ফলব্যাক হিসেবে প্রথম ছবি বা ডিফল্ট নেওয়া
                 if (!matchedImgObj && imagesList.length > 0) {
-                    matchedImgObj = imagesList[0];
+                    let fallbackImg = imagesList[i % imagesList.length];
+                    matchedImgObj = {
+                        name: fallbackImg.name,
+                        download_url: fallbackImg.download_url
+                    };
                 }
 
-                let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=" + encodeURIComponent(catName);
-                
-                // টাইটেল জেনারেশন: ম্যাচ করা ইমেজের নাম থেকে আন্ডারস্কোর ট্যাগ রিমুভ করে সুন্দর টাইটেল তৈরি
-                let titleText = "";
-                if (matchedImgObj) {
-                    let imgBaseName = path.basename(matchedImgObj.name, path.extname(matchedImgObj.name));
-                    let cleanImgName = imgBaseName.replace(/_[a-zA-Z0-9]+$/, ""); // শেষের আইডি যেমন _5 বাদ দেওয়া
-                    titleText = cleanImgName.replace(/[-_]/g, " ").trim();
-                }
+                let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
 
-                // যদি ইমেজের নাম থেকে টাইটেল না পাওয়া যায়, তবে ফাইলের নাম থেকে বের করবে
-                if (!titleText) {
-                    let fileBaseName = path.basename(fName, path.extname(fName));
-                    let cleanFileNameOnly = fileBaseName.replace(/_[a-zA-Z0-9]+$/, "");
-                    titleText = cleanFileNameOnly.replace(/[-_]/g, " ").trim();
-                }
+                // টাইটেল ক্লিন করার লজিক (আপনার script.js থেকে হুবহু নেওয়া)
+                let rawNameToClean = matchedImgObj ? matchedImgObj.name : fileName;
+                let nameWithoutExt = rawNameToClean.replace(/\.[^/.]+$/, "");
+                let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
+                let titleText = cleanBaseName.replace(/[-_]/g, " ").trim();
 
-                // ডিসপ্লে নেম (ফাইলের নাম থেকে শুধু শেষের আন্ডারস্কোর আইডি ট্যাগ রিমুভ করা, যেমন tesr_5.m3u থেকে tesr.m3u)
-                let extMatch = path.extname(fName);
-                let nameWithoutFileExt = path.basename(fName, extMatch);
-                let cleanFileName = nameWithoutFileExt.replace(/_[a-zA-Z0-9]+$/, "") + extMatch;
+                // ফাইলের প্রদর্শিত নাম (displayName) থেকে শুধুমাত্র এক্সটেনশন রেখে শেষের আন্ডারস্কোর ট্যাগ রিমুভ করা
+                let extMatch = fileName.match(/\.[^/.]+$/);
+                let fileExt = extMatch ? extMatch[0] : "";
+                let nameWithoutFileExt = fileName.replace(/\.[^/.]+$/, "");
+                let cleanFileName = nameWithoutFileExt.replace(/_[a-zA-Z0-9]+$/, "") + fileExt;
 
                 collectedFiles.push({
-                    name: fName,
+                    name: fileName,
                     displayName: cleanFileName,
                     download_url: downloadUrl,
                     category: catName,
                     image: matchedImgUrl,
                     title: titleText || "Live Stream",
-                    timestamp: timestamp
+                    timestamp: commitTime
                 });
             }
         }
 
-        // টাইমস্ট্যাম্প অনুযায়ী নতুন থেকে পুরোনো সাজানো
         collectedFiles.sort((a, b) => b.timestamp - a.timestamp);
 
         let finalData = {
@@ -148,7 +161,7 @@ jobs:
         };
 
         fs.writeFileSync("data.json", JSON.stringify(finalData, null, 4), "utf-8");
-        console.log("data.json generated successfully with strict ID matching!");
+        console.log("data.json generated successfully using exact script.js logic!");
         '
 
     - name: Commit and push if data.json changed
