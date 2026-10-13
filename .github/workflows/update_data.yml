@@ -80,6 +80,7 @@ jobs:
             });
 
             let validFilesWithTime = [];
+            let imgIndex = 0;
             for (let fName of validFiles) {
                 let relPath = `${catName}/${fName}`;
                 let timestamp = 0;
@@ -94,16 +95,24 @@ jobs:
                 let fileHashId = extractHashId(fName);
                 let matchedImgObj = (fileHashId && imagesMap[fileHashId]) ? imagesMap[fileHashId] : null;
 
+                // যদি আইডি দিয়ে ম্যাচ না করে, তবে ফোল্ডারের ভেতরে থাকা ছবিগুলো থেকে সিরিয়াল অনুযায়ী একটি ছবি নিয়ে নেবে
                 if (!matchedImgObj && imagesList.length > 0) {
-                    matchedImgObj = imagesList[validFilesWithTime.length % imagesList.length];
+                    matchedImgObj = imagesList[imgIndex % imagesList.length];
+                    imgIndex++;
                 }
 
-                let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=No+Preview";
+                let matchedImgUrl = matchedImgObj ? matchedImgObj.download_url : "https://via.placeholder.com/300x160?text=" + encodeURIComponent(catName);
                 
+                // টাইটেলের জন্য ইমেজের নাম বা ফাইলের নাম থেকে সুন্দর টেক্সট তৈরি
                 let rawNameToClean = matchedImgObj ? matchedImgObj.name : fName;
                 let nameWithoutExt = path.basename(rawNameToClean, path.extname(rawNameToClean));
                 let cleanBaseName = nameWithoutExt.replace(/_[a-zA-Z0-9]+$/, "");
                 let titleText = cleanBaseName.replace(/[-_]/g, " ").trim();
+                // যদি টাইটেল একদম ছোট বা ফাকা হয়, তবে ক্যাটাগরি বা ফাইলের নাম দিয়ে ফলব্যাক করবে
+                if (!titleText || titleText.length <= 1) {
+                    let fExt = path.extname(fName);
+                    titleText = path.basename(fName, fExt).replace(/_[a-zA-Z0-9]+$/, "").replace(/[-_]/g, " ");
+                }
 
                 let extMatch = path.extname(fName);
                 let nameWithoutFileExt = path.basename(fName, extMatch);
@@ -115,7 +124,7 @@ jobs:
                     download_url: downloadUrl,
                     category: catName,
                     image: matchedImgUrl,
-                    title: titleText || "Live Stream",
+                    title: titleText,
                     timestamp: timestamp
                 });
             }
