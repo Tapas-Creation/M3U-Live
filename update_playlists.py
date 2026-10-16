@@ -9,7 +9,7 @@ RAW_URL_1 = "https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main
 # ২. আপনার দ্বিতীয় গিটহাবের ফাইলের Raw Link
 RAW_URL_2 = "https://raw.githubusercontent.com/shidul100/Iptv/refs/heads/main/playlist.m3u"
 
-# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাবের জন্য)
+# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাব ও সুপাবেস উভয়ের জন্য)
 TARGET_FOLDER = "Auto Update"
 FILE_NAME_1 = "playlist_one.m3u"
 FILE_NAME_2 = "playlist_two.m3u"
@@ -21,8 +21,9 @@ BUCKET_NAME = "IPTV-Network"
 
 def upload_to_supabase(file_content_bytes, file_name):
     try:
-        # Supabase Storage REST API Endpoint
-        upload_url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET_NAME}/{file_name}"
+        # সুপাবেস বালতির ভেতরে ফোল্ডারের নামসহ পাথ সেট করা (Auto Update/file_name)
+        file_path_in_supabase = f"{TARGET_FOLDER}/{file_name}"
+        upload_url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET_NAME}/{file_path_in_supabase}"
         
         req = urllib.request.Request(
             upload_url,
@@ -31,16 +32,15 @@ def upload_to_supabase(file_content_bytes, file_name):
                 'apikey': SUPABASE_KEY,
                 'Authorization': f'Bearer {SUPABASE_KEY}',
                 'Content-Type': 'audio/x-mpegurl',
-                'x-upsert': 'true' # আগের ফাইল থাকলে স্বয়ংক্রিয়ভাবে ওভাররাইট বা রিপ্লেস করবে
+                'x-upsert': 'true' # ফোল্ডারের ভেতরে ফাইল থাকলে ওভাররাইট বা রিপ্লেস করবে
             },
             method='POST'
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
-            print(f"Successfully uploaded {file_name} to Supabase Storage!")
+            print(f"Successfully uploaded {file_name} to Supabase Storage inside '{TARGET_FOLDER}'!")
             return True
     except urllib.error.HTTPError as e:
-        # Supabase থেকে ঠিক কী কারণে এরর আসছে তা লগে পরিষ্কার দেখাবে
         error_message = e.read().decode('utf-8', errors='ignore')
         print(f"HTTP Error uploading to Supabase ({file_name}): {e.code} - {error_message}")
         return False
@@ -96,7 +96,7 @@ def process_and_save(url, save_path, file_name, playlist_title):
             f.write(final_content)
         print(f"Saved locally to GitHub folder: {save_path}")
         
-        # ২. Supabase Storage Bucket-এ অটো আপলোড/রিপ্লেস করা
+        # ২. Supabase Storage-এর 'Auto Update' ফোল্ডারে অটো আপলোড/রিপ্লেস করা
         upload_to_supabase(final_content_bytes, file_name)
         
         return True
