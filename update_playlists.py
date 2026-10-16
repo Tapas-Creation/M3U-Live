@@ -1,4 +1,5 @@
 import urllib.request
+import urllib.error
 import os
 from datetime import datetime
 
@@ -38,6 +39,11 @@ def upload_to_supabase(file_content_bytes, file_name):
         with urllib.request.urlopen(req, timeout=30) as response:
             print(f"Successfully uploaded {file_name} to Supabase Storage!")
             return True
+    except urllib.error.HTTPError as e:
+        # Supabase থেকে ঠিক কী কারণে এরর আসছে তা লগে পরিষ্কার দেখাবে
+        error_message = e.read().decode('utf-8', errors='ignore')
+        print(f"HTTP Error uploading to Supabase ({file_name}): {e.code} - {error_message}")
+        return False
     except Exception as e:
         print(f"Error uploading to Supabase ({file_name}): {e}")
         return False
