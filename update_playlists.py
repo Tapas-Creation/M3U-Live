@@ -8,14 +8,41 @@ RAW_URL_1 = "https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main
 # ২. আপনার দ্বিতীয় গিটহাবের ফাইলের Raw Link
 RAW_URL_2 = "https://raw.githubusercontent.com/shidul100/Iptv/refs/heads/main/playlist.m3u"
 
-# ৩. গন্তব্য ফোল্ডারের নাম
+# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাবের জন্য)
 TARGET_FOLDER = "Auto Update"
-
-# ফাইল দুটির নাম যা সেভ হবে
 FILE_NAME_1 = "playlist_one.m3u"
 FILE_NAME_2 = "playlist_two.m3u"
 
-def process_and_save(url, save_path, playlist_title):
+# ৪. Supabase স্টোরেজ কনফিগারেশন
+SUPABASE_URL = "https://liljnnprtqwoimmsjuhy.supabase.co"
+SUPABASE_KEY = "sb_publishable_1HibJOEynpqyB-xuwZnruw_CvwaA3Dd"
+BUCKET_NAME = "IPTV-Network"
+
+def upload_to_supabase(file_content_bytes, file_name):
+    try:
+        # Supabase Storage REST API Endpoint
+        upload_url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET_NAME}/{file_name}"
+        
+        req = urllib.request.Request(
+            upload_url,
+            data=file_content_bytes,
+            headers={
+                'apikey': SUPABASE_KEY,
+                'Authorization': f'Bearer {SUPABASE_KEY}',
+                'Content-Type': 'audio/x-mpegurl',
+                'x-upsert': 'true' # আগের ফাইল থাকলে স্বয়ংক্রিয়ভাবে ওভাররাইট বা রিপ্লেস করবে
+            },
+            method='POST'
+        )
+        
+        with urllib.request.urlopen(req, timeout=30) as response:
+            print(f"Successfully uploaded {file_name} to Supabase Storage!")
+            return True
+    except Exception as e:
+        print(f"Error uploading to Supabase ({file_name}): {e}")
+        return False
+
+def process_and_save(url, save_path, file_name, playlist_title):
     try:
         req = urllib.request.Request(
             url, 
@@ -26,7 +53,7 @@ def process_and_save(url, save_path, playlist_title):
             
         text_content = content_bytes.decode('utf-8', errors='ignore')
         
-        # সোর্স ফাইলের পুরনো হেডার বাদ দিয়ে শুধু চ্যানেল এবং স্ট্রিম লিংকগুলো আলাদা করা
+        # সোর্স ফাইলের পুরনো হেডার বা ইনফো রিমুভ করে শুধু চ্যানেল ও লিংকগুলো আলাদা করা
         lines = text_content.splitlines()
         channel_lines = []
         start_collecting = False
@@ -39,10 +66,10 @@ def process_and_save(url, save_path, playlist_title):
                 
         clean_content = "\n".join(channel_lines) if channel_lines else text_content
 
-        # বর্তমান সময় ও তারিখ (আপনার স্ক্রিনশটের ফরম্যাট অনুযায়ী)
+        # বর্তমান সময় ও তারিখ
         current_time = datetime.now().strftime("%I:%M %p %d-%m-%Y")
         
-        # আপনার নিজস্ব কাস্টম হেডার ইনফরমেশন
+        # আপনার কাস্টম হেডার ইনফরমেশন
         custom_header = f"""#EXTM3U
 #PLAYLIST: {playlist_title}
 #EXTENC: UTF-8
@@ -54,29 +81,33 @@ def process_and_save(url, save_path, playlist_title):
 
 """
         
-        # নতুন হেডার এবং চ্যানেল লিস্ট এক করা
+        # ফাইনাল ফাইল কন্টেন্ট প্রস্তুত করা
         final_content = custom_header + clean_content
+        final_content_bytes = final_content.encode('utf-8')
         
+        # ১. গিটহাবের লোকাল ফোল্ডারে সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
-            
-        print(f"Successfully processed and saved: {save_path}")
+        print(f"Saved locally to GitHub folder: {save_path}")
+        
+        # ২. Supabase Storage Bucket-এ অটো আপলোড/রিপ্লেস করা
+        upload_to_supabase(final_content_bytes, file_name)
+        
         return True
     except Exception as e:
         print(f"Error processing {url}: {e}")
         return False
 
 if __name__ == "__main__":
-    # ফোল্ডার না থাকলে তৈরি করে নেওয়া
     os.makedirs(TARGET_FOLDER, exist_ok=True)
     
     path_1 = os.path.join(TARGET_FOLDER, FILE_NAME_1)
     path_2 = os.path.join(TARGET_FOLDER, FILE_NAME_2)
     
-    print("Fetching and updating Playlist One...")
-    process_and_save(RAW_URL_1, path_1, "IPTV-NETWORK - Playlist One")
+    print("Processing Playlist One...")
+    process_and_save(RAW_URL_1, path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
     
-    print("Fetching and updating Playlist Two...")
-    process_and_save(RAW_URL_2, path_2, "IPTV-NETWORK - Playlist Two")
+    print("Processing Playlist Two...")
+    process_and_save(RAW_URL_2, path_2, FILE_NAME_2, "IPTV-NETWORK - Playlist Two")
     
-    print("All playlist sync and header update process completed.")
+    print("All GitHub and Supabase sync processes completed.")
