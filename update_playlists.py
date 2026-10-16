@@ -34,13 +34,13 @@ def upload_bytes_to_supabase(file_content_bytes, file_name):
                 'apikey': SUPABASE_KEY,
                 'Authorization': f'Bearer {SUPABASE_KEY}',
                 'Content-Type': 'audio/x-mpegurl',
-                'x-upsert': 'true' # Supabase-এ আগের ফাইল থাকলে সরাসরি ওভাররাইট বা রিপ্লেস করবে
+                'x-upsert': 'true'
             },
             method='POST'
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
-            print(f"Successfully uploaded the exact edited file '{file_name}' to Supabase Storage inside '{TARGET_FOLDER}'!")
+            print(f"Successfully uploaded '{file_name}' to Supabase Storage inside '{TARGET_FOLDER}'!")
             return True
     except urllib.error.HTTPError as e:
         error_message = e.read().decode('utf-8', errors='ignore')
@@ -63,23 +63,27 @@ def process_and_sync(url, save_path, file_name, playlist_title):
         
         lines = text_content.splitlines()
         channel_lines = []
-        skip_header = True
         
+        # সুনির্দিষ্ট লজিক: শুধু যে লাইনগুলোতে স্ট্রিম লিংক বা চ্যানেল ইনফো আছে (#EXTINF, http, https, #EXTGRP ইত্যাদি) 
+        # অথবা যেগুলোতে হেডারের ট্যাগ নেই, সেগুলোকে ১০০% সুরক্ষিত রেখে সংগ্রহ করা
         for line in lines:
-            if line.startswith("#EXTINF") or line.startswith("#EXTGRP"):
-                skip_header = False
-            if not skip_header:
-                channel_lines.append(line)
-                
-        if not channel_lines and len(lines) > 3:
-            channel_lines = lines[3:]
-        elif not channel_lines:
+            stripped = line.strip()
+            # যদি লাইনটি পুরনো কোনো হেডার ট্যাগ যেমন #EXTM3U, #PLAYLIST, #EXTENC হয়, তবে বাদ দেব
+            if stripped.startswith("#EXTM3U") or stripped.startswith("#PLAYLIST:") or stripped.startswith("#EXTENC:"):
+                continue
+            # এছাড়াও যদি ওপরে কোনো অতিরিক্ত কমেন্ট থাকে যা আমাদের হেডার নয়, সেগুলোও ফিল্টার করতে পারি
+            # তবে আমাদের আসল চ্যানেল এবং স্ট্রিম লিংকগুলো হুবহু রেখে দেব
+            channel_lines.append(line)
+            
+        # যদি কোনো কারণে লিস্ট খালি হয়ে যায়, তবে পুরো ফাইল রেখে দেব
+        if not channel_lines:
             channel_lines = lines
 
         clean_content = "\n".join(channel_lines)
 
         current_time = datetime.now().strftime("%I:%M %p %d-%m-%Y")
         
+        # আপনার একদম নিজস্ব ও নিখুঁত কাস্টম হেডার
         custom_header = f"""#EXTM3U
 #PLAYLIST: {playlist_title}
 #EXTENC: UTF-8
@@ -91,16 +95,16 @@ def process_and_sync(url, save_path, file_name, playlist_title):
 
 """
         
-        # ফাইনাল এডিটেড ফাইল কনটেন্ট তৈরি
+        # নতুন হেডার এবং সুরক্ষিত চ্যানেল/স্ট্রিম লিংকগুলো একসাথে মেলানো
         final_content = custom_header + clean_content
         final_content_bytes = final_content.encode('utf-8')
         
-        # ১. গিটহাবের লোকাল ফোল্ডারে ফাইলটি সেভ করা
+        # ১. গিটহাবের লোকাল ফোল্ডারে সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
         print(f"Saved locally to GitHub folder: {save_path}")
         
-        # ২. ঠিক একই এডিটেড ফাইল কনটেন্ট Supabase-এর 'Auto Update' ফোল্ডারে পাঠিয়ে দেওয়া
+        # ২. সুপাবেস স্টোরেজে পাঠানো
         upload_bytes_to_supabase(final_content_bytes, file_name)
         
         return True
