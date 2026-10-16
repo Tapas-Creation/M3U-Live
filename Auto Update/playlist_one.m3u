@@ -1,13 +1,11 @@
 #EXTM3U
-#PLAYLIST: Z BDIX
+#PLAYLIST: IPTV-NETWORK - Playlist One
 #EXTENC: UTF-8
 
-# Playlist Name: Z BDIX
-# Last Update: 06:10 PM 09-10-2026
-# Facebook Page: https://www.facebook.com/m3uworld4k/
-# Telegram: t.me/+dck4ykylk0kwyzk1
-
-
+# Playlist Name: IPTV-NETWORK - Playlist One
+# Last Update: 03:13 AM 16-10-2026
+# Website: https://tapas-iptv.github.io/IPTV-Network.com/
+# Facebook Page: www.facebook.com/iptvnetworkbd
 
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/k5hkVvSp/rajdhani.png" group-title="𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡𝐢",Rajdhani
 https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8
@@ -392,6 +390,3 @@ https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 
 
 #EXTINF:-1 tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/nuLMioRauQacj4bRXRsJX9Oe5H6.jpg" group-title="Movies",Alpha (2026)
-
-
-# Last Auto-Updated: 2026-10-16 03:03:10

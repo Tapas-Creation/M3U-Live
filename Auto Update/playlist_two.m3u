@@ -1,4 +1,12 @@
 #EXTM3U
+#PLAYLIST: IPTV-NETWORK - Playlist Two
+#EXTENC: UTF-8
+
+# Playlist Name: IPTV-NETWORK - Playlist Two
+# Last Update: 03:13 AM 16-10-2026
+# Website: https://tapas-iptv.github.io/IPTV-Network.com/
+# Facebook Page: www.facebook.com/iptvnetworkbd
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/6e/T_Sports_HD_logo_2021.png" group-title="SPORTS",T SPORTS
 http://103.141.70.136:8080/hls/w5e-eriMVcc1ztmQWBs0rHO_UwR9zN02rvFwk0yV5q_1G0dTmmE1kPsKAgPxAg3cTm9JPB7o9QdmBpsGHF3TMjJhD0Z7iou3na8OQnSiTiITCZBuol2gVwKoWcIxQBAL
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp" group-title="SPORTS",Ten Cricket
@@ -268,5 +276,3 @@ https://live20.bozztv.com/giatvplayout7/giatv-209592/tracks-v1a1/mono.ts.m3u8
 https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="and_pictures_hd" tvg-name="And Pictures HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg" group-title="HINDI",And Pictures HD
 https://stream.ottplus.bd/live/and_picture_hd_abr/live/and_picture_hd_720/index.m3u8
-
-# Last Auto-Updated: 2026-10-16 03:03:10
