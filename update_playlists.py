@@ -20,8 +20,16 @@ SUPABASE_URL = "https://liljnnprtqwoimmsjuhy.supabase.co"
 SUPABASE_KEY = "sb_publishable_1HibJOEynpqyB-xuwZnruw_CvwaA3Dd"
 BUCKET_NAME = "IPTV-Network"
 
-def upload_to_supabase(file_content_bytes, file_name):
+def upload_file_to_supabase(local_file_path, file_name):
     try:
+        # লোকাল গিটহাব ফোল্ডারে যে এডিটেড ফাইলটি সেভ হয়েছে, সেটি রিড করা
+        if not os.path.exists(local_file_path):
+            print(f"Error: Local file not found for Supabase upload: {local_file_path}")
+            return False
+            
+        with open(local_file_path, 'rb') as f:
+            file_content_bytes = f.read()
+
         folder_encoded = urllib.parse.quote(TARGET_FOLDER)
         file_encoded = urllib.parse.quote(file_name)
         
@@ -34,13 +42,13 @@ def upload_to_supabase(file_content_bytes, file_name):
                 'apikey': SUPABASE_KEY,
                 'Authorization': f'Bearer {SUPABASE_KEY}',
                 'Content-Type': 'audio/x-mpegurl',
-                'x-upsert': 'true'
+                'x-upsert': 'true' # Supabase-এ আগের ফাইল থাকলে ওভাররাইট বা রিপ্লেস করবে
             },
             method='POST'
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
-            print(f"Successfully uploaded edited {file_name} to Supabase Storage inside '{TARGET_FOLDER}'!")
+            print(f"Successfully uploaded the GitHub-saved file '{file_name}' to Supabase Storage!")
             return True
     except urllib.error.HTTPError as e:
         error_message = e.read().decode('utf-8', errors='ignore')
@@ -61,23 +69,25 @@ def process_and_save(url, save_path, file_name, playlist_title):
             
         text_content = content_bytes.decode('utf-8', errors='ignore')
         
-        # সোর্স ফাইলের পুরনো হেডার বা ইনফো রিমুভ করে শুধু চ্যানেল ও লিংকগুলো আলাদা করা
         lines = text_content.splitlines()
         channel_lines = []
-        start_collecting = False
+        skip_header = True
         
         for line in lines:
-            if line.startswith("#EXTINF") or line.startswith("http://") or line.startswith("https://") or line.startswith("#EXTGRP"):
-                start_collecting = True
-            if start_collecting:
+            if line.startswith("#EXTINF") or line.startswith("#EXTGRP"):
+                skip_header = False
+            if not skip_header:
                 channel_lines.append(line)
                 
-        clean_content = "\n".join(channel_lines) if channel_lines else text_content
+        if not channel_lines and len(lines) > 3:
+            channel_lines = lines[3:]
+        elif not channel_lines:
+            channel_lines = lines
 
-        # বর্তমান সময় ও তারিখ
+        clean_content = "\n".join(channel_lines)
+
         current_time = datetime.now().strftime("%I:%M %p %d-%m-%Y")
         
-        # আপনার কাস্টম হেডার ইনফরমেশন
         custom_header = f"""#EXTM3U
 #PLAYLIST: {playlist_title}
 #EXTENC: UTF-8
@@ -89,17 +99,15 @@ def process_and_save(url, save_path, file_name, playlist_title):
 
 """
         
-        # ফাইনাল এডিটেড ফাইল কন্টেন্ট প্রস্তুত করা
         final_content = custom_header + clean_content
-        final_content_bytes = final_content.encode('utf-8')
         
-        # ১. গিটহাবের লোকাল ফোল্ডারে এডিটেড ফাইলটি সেভ করা
+        # ১. প্রথমে গিটহাবের লোকাল ফোল্ডারে এডিটেড ফাইলটি পার্মানেন্টলি সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
-        print(f"Saved edited file locally to GitHub folder: {save_path}")
+        print(f"Successfully saved and edited locally: {save_path}")
         
-        # ২. Supabase Storage-এর 'Auto Update' ফোল্ডারে ওই একই এডিটেড ফাইল আপলোড/রিপ্লেস করা
-        upload_to_supabase(final_content_bytes, file_name)
+        # ২. গিটহাবে সেভ হওয়ার পর ঠিক ওই লোকাল এডিটেড ফাইলটিই Supabase-এ পাঠিয়ে দেওয়া
+        upload_file_to_supabase(save_path, file_name)
         
         return True
     except Exception as e:
