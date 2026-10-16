@@ -20,16 +20,8 @@ SUPABASE_URL = "https://liljnnprtqwoimmsjuhy.supabase.co"
 SUPABASE_KEY = "sb_publishable_1HibJOEynpqyB-xuwZnruw_CvwaA3Dd"
 BUCKET_NAME = "IPTV-Network"
 
-def upload_file_to_supabase(local_file_path, file_name):
+def upload_bytes_to_supabase(file_content_bytes, file_name):
     try:
-        # লোকাল গিটহাব ফোল্ডারে যে এডিটেড ফাইলটি সেভ হয়েছে, সেটি রিড করা
-        if not os.path.exists(local_file_path):
-            print(f"Error: Local file not found for Supabase upload: {local_file_path}")
-            return False
-            
-        with open(local_file_path, 'rb') as f:
-            file_content_bytes = f.read()
-
         folder_encoded = urllib.parse.quote(TARGET_FOLDER)
         file_encoded = urllib.parse.quote(file_name)
         
@@ -42,13 +34,13 @@ def upload_file_to_supabase(local_file_path, file_name):
                 'apikey': SUPABASE_KEY,
                 'Authorization': f'Bearer {SUPABASE_KEY}',
                 'Content-Type': 'audio/x-mpegurl',
-                'x-upsert': 'true' # Supabase-এ আগের ফাইল থাকলে ওভাররাইট বা রিপ্লেস করবে
+                'x-upsert': 'true' # Supabase-এ আগের ফাইল থাকলে সরাসরি ওভাররাইট বা রিপ্লেস করবে
             },
             method='POST'
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
-            print(f"Successfully uploaded the GitHub-saved file '{file_name}' to Supabase Storage!")
+            print(f"Successfully uploaded the exact edited file '{file_name}' to Supabase Storage inside '{TARGET_FOLDER}'!")
             return True
     except urllib.error.HTTPError as e:
         error_message = e.read().decode('utf-8', errors='ignore')
@@ -58,7 +50,7 @@ def upload_file_to_supabase(local_file_path, file_name):
         print(f"Error uploading to Supabase ({file_name}): {e}")
         return False
 
-def process_and_save(url, save_path, file_name, playlist_title):
+def process_and_sync(url, save_path, file_name, playlist_title):
     try:
         req = urllib.request.Request(
             url, 
@@ -99,15 +91,17 @@ def process_and_save(url, save_path, file_name, playlist_title):
 
 """
         
+        # ফাইনাল এডিটেড ফাইল কনটেন্ট তৈরি
         final_content = custom_header + clean_content
+        final_content_bytes = final_content.encode('utf-8')
         
-        # ১. প্রথমে গিটহাবের লোকাল ফোল্ডারে এডিটেড ফাইলটি পার্মানেন্টলি সেভ করা
+        # ১. গিটহাবের লোকাল ফোল্ডারে ফাইলটি সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
-        print(f"Successfully saved and edited locally: {save_path}")
+        print(f"Saved locally to GitHub folder: {save_path}")
         
-        # ২. গিটহাবে সেভ হওয়ার পর ঠিক ওই লোকাল এডিটেড ফাইলটিই Supabase-এ পাঠিয়ে দেওয়া
-        upload_file_to_supabase(save_path, file_name)
+        # ২. ঠিক একই এডিটেড ফাইল কনটেন্ট Supabase-এর 'Auto Update' ফোল্ডারে পাঠিয়ে দেওয়া
+        upload_bytes_to_supabase(final_content_bytes, file_name)
         
         return True
     except Exception as e:
@@ -121,9 +115,9 @@ if __name__ == "__main__":
     path_2 = os.path.join(TARGET_FOLDER, FILE_NAME_2)
     
     print("Processing Playlist One...")
-    process_and_save(RAW_URL_1, path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
+    process_and_sync(RAW_URL_1, path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
     
     print("Processing Playlist Two...")
-    process_and_save(RAW_URL_2, path_2, FILE_NAME_2, "IPTV-NETWORK - Playlist Two")
+    process_and_sync(RAW_URL_2, path_2, FILE_NAME_2, "IPTV-NETWORK - Playlist Two")
     
     print("All GitHub and Supabase sync processes completed.")
