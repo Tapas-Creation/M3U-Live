@@ -1,9 +1,9 @@
-name: Daily Sync Two Playlists
+name: Sync Playlists Every 2 Hours
 
 on:
   schedule:
-    # প্রতিদিন একবার রান হবে (প্রতিদিন রাত ১২টায় UTC অনুযায়ী, প্রয়োজনমতো পরিবর্তন করতে পারেন)
-    - cron: '0 0 * * *' 
+    # প্রতি ২ ঘণ্টা পর পর অটোমেটিক রান হবে
+    - cron: '0 */2 * * *' 
   workflow_dispatch: # গিটহাব থেকে ম্যানুয়ালি রান করার জন্য
 
 jobs:
@@ -21,11 +21,13 @@ jobs:
       - name: Run update script
         run: python update_playlists.py
 
-      - name: Commit and push if changed
+      - name: Commit and push changes
         run: |
           git config --global user.name "Playlist Sync Bot"
           git config --global user.email "bot@github.com"
           
           git add .
-          # ফাইলে নতুন কোনো পরিবর্তন থাকলেই কেবল কমিট এবং পুশ করবে, নচেৎ স্কিপ করবে
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-updated playlist files from source raw links" && git push)
+          
+          # এখানে চেক করা ছাড়াই প্রতিবার ফাইল পেলে কমিট ও পুশ করে ওভাররাইট করে দেবে
+          git commit -m "Auto-updated and replaced playlist files from raw links" || echo "No changes to commit"
+          git push
