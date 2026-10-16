@@ -4,13 +4,13 @@ import urllib.parse
 import os
 from datetime import datetime
 
-# १. আপনার প্রথম গিটহাবের ফাইলের Raw Link
+# ১. আপনার প্রথম গিটহাবের ফাইলের Raw Link
 RAW_URL_1 = "https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main/z.m3u"
 
 # ২. আপনার দ্বিতীয় গিটহাবের ফাইলের Raw Link
 RAW_URL_2 = "https://raw.githubusercontent.com/shidul100/Iptv/refs/heads/main/playlist.m3u"
 
-# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাবের জন্য)
+# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাব ও সুপাবেসের জন্য)
 TARGET_FOLDER = "Auto Update"
 FILE_NAME_1 = "playlist_one.m3u"
 FILE_NAME_2 = "playlist_two.m3u"
@@ -40,7 +40,7 @@ def upload_to_supabase(file_content_bytes, file_name):
         )
         
         with urllib.request.urlopen(req, timeout=30) as response:
-            print(f"Successfully uploaded {file_name} to Supabase Storage inside '{TARGET_FOLDER}'!")
+            print(f"Successfully uploaded edited {file_name} to Supabase Storage inside '{TARGET_FOLDER}'!")
             return True
     except urllib.error.HTTPError as e:
         error_message = e.read().decode('utf-8', errors='ignore')
@@ -61,6 +61,7 @@ def process_and_save(url, save_path, file_name, playlist_title):
             
         text_content = content_bytes.decode('utf-8', errors='ignore')
         
+        # সোর্স ফাইলের পুরনো হেডার বা ইনফো রিমুভ করে শুধু চ্যানেল ও লিংকগুলো আলাদা করা
         lines = text_content.splitlines()
         channel_lines = []
         start_collecting = False
@@ -73,8 +74,10 @@ def process_and_save(url, save_path, file_name, playlist_title):
                 
         clean_content = "\n".join(channel_lines) if channel_lines else text_content
 
+        # বর্তমান সময় ও তারিখ
         current_time = datetime.now().strftime("%I:%M %p %d-%m-%Y")
         
+        # আপনার কাস্টম হেডার ইনফরমেশন
         custom_header = f"""#EXTM3U
 #PLAYLIST: {playlist_title}
 #EXTENC: UTF-8
@@ -86,13 +89,16 @@ def process_and_save(url, save_path, file_name, playlist_title):
 
 """
         
+        # ফাইনাল এডিটেড ফাইল কন্টেন্ট প্রস্তুত করা
         final_content = custom_header + clean_content
         final_content_bytes = final_content.encode('utf-8')
         
+        # ১. গিটহাবের লোকাল ফোল্ডারে এডিটেড ফাইলটি সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
-        print(f"Saved locally to GitHub folder: {save_path}")
+        print(f"Saved edited file locally to GitHub folder: {save_path}")
         
+        # ২. Supabase Storage-এর 'Auto Update' ফোল্ডারে ওই একই এডিটেড ফাইল আপলোড/রিপ্লেস করা
         upload_to_supabase(final_content_bytes, file_name)
         
         return True
