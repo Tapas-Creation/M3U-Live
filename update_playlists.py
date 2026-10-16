@@ -1,5 +1,6 @@
 import urllib.request
 import urllib.error
+import urllib.parse
 import os
 from datetime import datetime
 
@@ -9,7 +10,7 @@ RAW_URL_1 = "https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main
 # ২. আপনার দ্বিতীয় গিটহাবের ফাইলের Raw Link
 RAW_URL_2 = "https://raw.githubusercontent.com/shidul100/Iptv/refs/heads/main/playlist.m3u"
 
-# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাব ও সুপাবেস উভয়ের জন্য)
+# ৩. গন্তব্য ফোল্ডারের নাম (গিটহাবের জন্য)
 TARGET_FOLDER = "Auto Update"
 FILE_NAME_1 = "playlist_one.m3u"
 FILE_NAME_2 = "playlist_two.m3u"
@@ -21,9 +22,11 @@ BUCKET_NAME = "IPTV-Network"
 
 def upload_to_supabase(file_content_bytes, file_name):
     try:
-        # সুপাবেস বালতির ভেতরে ফোল্ডারের নামসহ পাথ সেট করা (Auto Update/file_name)
-        file_path_in_supabase = f"{TARGET_FOLDER}/{file_name}"
-        upload_url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET_NAME}/{file_path_in_supabase}"
+        # ফোল্ডারের নামের স্পেস বা বিশেষ ক্যারেক্টার সঠিকভাবে ইউআরএল এনকোড করা
+        folder_encoded = urllib.parse.quote(TARGET_FOLDER)
+        file_encoded = urllib.parse.quote(file_name)
+        
+        upload_url = f"{SUPABASE_URL}/storage/v1/object/{BUCKET_NAME}/{folder_encoded}/{file_encoded}"
         
         req = urllib.request.Request(
             upload_url,
@@ -32,7 +35,7 @@ def upload_to_supabase(file_content_bytes, file_name):
                 'apikey': SUPABASE_KEY,
                 'Authorization': f'Bearer {SUPABASE_KEY}',
                 'Content-Type': 'audio/x-mpegurl',
-                'x-upsert': 'true' # ফোল্ডারের ভেতরে ফাইল থাকলে ওভাররাইট বা রিপ্লেস করবে
+                'x-upsert': 'true'
             },
             method='POST'
         )
@@ -111,7 +114,7 @@ if __name__ == "__main__":
     path_2 = os.path.join(TARGET_FOLDER, FILE_NAME_2)
     
     print("Processing Playlist One...")
-    process_and_save(RAW_URL_1, path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
+    process_and_save(RAW_URL_1, path_path_1 if 'path_path_1' else path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
     
     print("Processing Playlist Two...")
     process_and_save(RAW_URL_2, path_2, FILE_NAME_2, "IPTV-NETWORK - Playlist Two")
