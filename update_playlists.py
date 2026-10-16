@@ -4,7 +4,7 @@ import urllib.parse
 import os
 from datetime import datetime
 
-# ১. আপনার প্রথম গিটহাবের ফাইলের Raw Link
+# १. আপনার প্রথম গিটহাবের ফাইলের Raw Link
 RAW_URL_1 = "https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main/z.m3u"
 
 # ২. আপনার দ্বিতীয় গিটহাবের ফাইলের Raw Link
@@ -22,7 +22,6 @@ BUCKET_NAME = "IPTV-Network"
 
 def upload_to_supabase(file_content_bytes, file_name):
     try:
-        # ফোল্ডারের নামের স্পেস বা বিশেষ ক্যারেক্টার সঠিকভাবে ইউআরএল এনকোড করা
         folder_encoded = urllib.parse.quote(TARGET_FOLDER)
         file_encoded = urllib.parse.quote(file_name)
         
@@ -62,7 +61,6 @@ def process_and_save(url, save_path, file_name, playlist_title):
             
         text_content = content_bytes.decode('utf-8', errors='ignore')
         
-        # সোর্স ফাইলের পুরনো হেডার বা ইনফো রিমুভ করে শুধু চ্যানেল ও লিংকগুলো আলাদা করা
         lines = text_content.splitlines()
         channel_lines = []
         start_collecting = False
@@ -75,10 +73,8 @@ def process_and_save(url, save_path, file_name, playlist_title):
                 
         clean_content = "\n".join(channel_lines) if channel_lines else text_content
 
-        # বর্তমান সময় ও তারিখ
         current_time = datetime.now().strftime("%I:%M %p %d-%m-%Y")
         
-        # আপনার কাস্টম হেডার ইনফরমেশন
         custom_header = f"""#EXTM3U
 #PLAYLIST: {playlist_title}
 #EXTENC: UTF-8
@@ -90,16 +86,13 @@ def process_and_save(url, save_path, file_name, playlist_title):
 
 """
         
-        # ফাইনাল ফাইল কন্টেন্ট প্রস্তুত করা
         final_content = custom_header + clean_content
         final_content_bytes = final_content.encode('utf-8')
         
-        # ১. গিটহাবের লোকাল ফোল্ডারে সেভ করা
         with open(save_path, 'w', encoding='utf-8') as f:
             f.write(final_content)
         print(f"Saved locally to GitHub folder: {save_path}")
         
-        # ২. Supabase Storage-এর 'Auto Update' ফোল্ডারে অটো আপলোড/রিপ্লেস করা
         upload_to_supabase(final_content_bytes, file_name)
         
         return True
@@ -114,7 +107,7 @@ if __name__ == "__main__":
     path_2 = os.path.join(TARGET_FOLDER, FILE_NAME_2)
     
     print("Processing Playlist One...")
-    process_and_save(RAW_URL_1, path_path_1 if 'path_path_1' else path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
+    process_and_save(RAW_URL_1, path_1, FILE_NAME_1, "IPTV-NETWORK - Playlist One")
     
     print("Processing Playlist Two...")
     process_and_save(RAW_URL_2, path_2, FILE_NAME_2, "IPTV-NETWORK - Playlist Two")
