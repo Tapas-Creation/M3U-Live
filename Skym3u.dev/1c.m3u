@@ -1,0 +1,305 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="Newsnation" tvg-chno="108" tvg-name="News Nation" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",News Nation
+https://nn-khabriyatv.originein.in/nntv/national/master_nnna_khabriyatv.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="112" tvg-name="Live Times" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Live Times
+https://stream.ottlive.co.in/livetimetv/index.m3u8
+#EXTINF:-1 tvg-id="BharatExpress" tvg-chno="114" tvg-name="Bharat Express" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Bharat Express
+https://stream.ottlive.co.in/bharatexpress/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="117" tvg-name="India Daily" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",India Daily
+https://cdn.ottlive.co.in/indiadailylive/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="118" tvg-name="Sadhna Plus News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Sadhna Plus News
+https://6n3yow8pl9ok-hls-live.5centscdn.com/sadhananewstv/live.stream/chunks.m3u8
+#EXTINF:-1 tvg-id="Aaj Ki Khabar" tvg-chno="119" tvg-name="Aaj Ki Khabar" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Aaj Ki Khabar
+https://stream.ottlive.co.in/aajkikhabar/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="124" tvg-name="Bonus Business" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Bonus Business
+https://stream.ottlive.co.in/thebonus/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="125" tvg-name="Amar Ujala" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Amar Ujala
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AV_PUBLISHERID=671b62be995a1cf780079b55&AV_CHANNELID=&AVS_SSAIID=6a09dadf1894bf701301d6a6&AVS_SOURCE=https%3A%2F%2Fstream.ottlive.co.in%2Famarujalatv%2Findex.m3u8&AVS_STREAM_TYPE=LIVE&AVS_STREAM_FORMAT=HLS&AVS_TEMPLATE=IN_APP&AVS_ADSERVER_RESPONSE_TYPE=VAST&AVS_NOMARK=true&ssai=1
+#EXTINF:-1 tvg-id="" tvg-chno="133" tvg-name="C News Bharat" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",C News Bharat
+https://legitpro.co.in/cnews/cnews/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Zingabad" tvg-chno="208" tvg-name="Zingabad" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Zingabad
+https://stream.ottlive.co.in/zingabad/index.m3u8
+#EXTINF:-1 tvg-id="Bollywood Masala" tvg-chno="209" tvg-name="Bollywood Masala" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Bollywood Masala
+https://lamhas.net/bollywoodmasala/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="210" tvg-name="Swastik Stories" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Swastik Stories
+https://amg14122-amg14122c1-amgplt0835.playout.now3.amagi.tv/playout/amg14122/amg14122c1/amgplt0835/amgplt0835.m3u8
+#EXTINF:-1 tvg-id="ComedyTadka" tvg-chno="218" tvg-name="Comedy Tadka" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Comedy Tadka
+https://streams2.sofast.tv/ptnr-khabriya/title-Comedy_Tadka_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/fe323c2c-f5d1-469c-91cc-c35b9324bd6f/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Bollywood4u" tvg-chno="230" tvg-name="Bollywood 4U" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Bollywood 4U
+https://streams2.sofast.tv/ptnr-Khabriya/title-BOLLYWOOD-4U-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/ab3710a6-be03-4a66-94c0-aea1d893c1ca/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Color Blind" tvg-chno="231" tvg-name="CB" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",CB
+https://streams2.sofast.tv/ptnr-Khabriya/title-COLOUR-BLIND-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bd8246ea-5735-4af5-8009-99309c4c8070/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Sadhana" tvg-chno="262" tvg-name="SADHNA TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",SADHNA TV
+https://6n3yow8pl9ok-hls-live.5centscdn.com/sadhanalivetv/live.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="265" tvg-name="Bless TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",Bless TV
+https://932y483pdjv8-hls-live.5centscdn.com/blesstv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="4K TRAVEL TV" tvg-chno="690" tvg-name="Travel 4K" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",Travel 4K
+https://streams2.sofast.tv/ptnr-khabriya/title-4K-TRAVEL-TV-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8137054b-fa92-44b8-a4db-76ade385f8a1/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="691" tvg-name="Heritage Plus" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",Heritage Plus
+https://streams2.sofast.tv/ptnr-TEST/genre-Documentary/lang-English/ctgr-Travel/title-HERITAGE-ENG/sofastplayout/05c9af40-9d2b-445b-ab20-5e46889877ce_1000010996_HLS/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="692" tvg-name="Go2 Travel" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",Go2 Travel
+https://live.nowtelly.com/go2travel/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="693" tvg-name="Discovering China" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",Discovering China
+https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="694" tvg-name="China Travel" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",China Travel
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+#EXTINF:-1 tvg-id="CUISINE &amp; CULTURE" tvg-chno="695" tvg-name="Cuisine Culture" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Food",Cuisine Culture
+https://streams2.sofast.tv/ptnr-khabriya/title-Cuisine_Culture_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/44ed77f9-8d77-4345-9b36-dbafc937e9e1/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="WineTV" tvg-chno="696" tvg-name="Wine Watches Whiskey" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Wine Watches Whiskey
+https://streams2.sofast.tv/ptnr-khabriya/title-Wine_Watches_Whiskey_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/3e470ecc-f5da-4382-9b31-8ae7de3701b2/manifest.m3u8
+#EXTINF:-1 tvg-id="UnchainedTV" tvg-chno="697" tvg-name="Unchained TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Unchained TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-Unchained_TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/74789da4-e40e-4632-a5fe-59bcfe344fb1/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="H2Otv" tvg-chno="698" tvg-name="H2O TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",H2O TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-H20_TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/fd7cffa3-41a1-4338-91ce-0e5e6027d086/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="ABSINTHETV" tvg-chno="699" tvg-name="AbsintheTV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",AbsintheTV
+https://streams2.sofast.tv/ptnr-Khabriya/title-Absinthe-tv_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2e2fce58-a1f8-49b6-87de-45523f7bae19/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="700" tvg-name="Wild TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Wild TV
+https://d2rlaw70a3lx3m.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Khabriya-MuxIP-WildTV/476.m3u8
+#EXTINF:-1 tvg-id="beach-channel" tvg-chno="702" tvg-name="The Beach Channel" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",The Beach Channel
+https://streams2.sofast.tv/ptnr-khabriya/title-The_Beach_Channel_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a241e9e9-15c7-4828-8274-4f0f6ecf871b/manifest.m3u8
+#EXTINF:-1 tvg-id="HUNT FISH TV (Outdoor Channel)" tvg-chno="705" tvg-name="Hunt Fish" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Hunt Fish
+https://streams2.sofast.tv/ptnr-Khabriya/title-HUNT_FISH_TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b4d70e9b-560f-403d-8c0d-19c3ca117494/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="706" tvg-name="Drone TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Drone TV
+https://airvuz-dronetv-1-us.ohlscdn.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RV TV" tvg-chno="707" tvg-name="RV TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",RV TV
+https://streams2.sofast.tv/ptnr-khabriya/title-RVTV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2df56844-3de0-4af2-a583-93d923a32021/manifest.m3u8
+#EXTINF:-1 tvg-id="YACHTING TV" tvg-chno="709" tvg-name="Yachting TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Yachting TV
+https://streams2.sofast.tv/ptnr-khabriya/title-Yachting_TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e28d32f9-7fb2-4589-b071-8d6748a9b945/manifest.m3u8
+#EXTINF:-1 tvg-id="horse-tv" tvg-chno="711" tvg-name="Horse TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Horse TV
+https://streams2.sofast.tv/ptnr-khabriya/title-Horse_TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dfe75d21-a13c-4c6a-8d76-b89dc52c74af/index.m3u8
+#EXTINF:-1 tvg-id="time2rlx" tvg-chno="715" tvg-name="Time2Rlx" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",Time2Rlx
+https://amg00735-amg00735c71-amgplt0835.playout.now3.amagi.tv/ts-us-w2-n1/playlist/amg00735-amg00735c71-amgplt0835/playlist.m3u8?app_bundle=com.neotv.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.0.0&brand_name=NeoTV%2B&channel_name=time2rlx&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="Wedotv CARS" tvg-chno="720" tvg-name="WeDO Cars" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Lifestyle",WeDO Cars
+https://amg00735-amg00735c78-amgplt0835.playout.now3.amagi.tv/ts-us-w2-n1/playlist/amg00735-amg00735c78-amgplt0835/playlist.m3u8?app_bundle=com.neotv.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.0.0&brand_name=NeoTV%2B&channel_name=wedolcars&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="CARTOON CLASSICS" tvg-chno="753" tvg-name="Cartoon Classics" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Kids",Cartoon Classics
+https://streams2.sofast.tv/ptnr-khabriya/title-CARTOON-TV-CLASSICS-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/ffbfa4cb-733b-4cd4-93c5-c7423e70f218/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="DIY ART" tvg-chno="760" tvg-name="DIY Art" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Kids",DIY Art
+https://streams2.sofast.tv/ptnr-khabriya/title-DIY-ART_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e5f1af3f-5a32-4725-be55-208aa53aa09d/manifest.m3u8
+#EXTINF:-1 tvg-id="Pitaara" tvg-chno="800" tvg-name="Pitaara TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Pitaara TV
+https://d3i5c1nmken8bh.cloudfront.net/Live/Pitaara_TV_SCTE/playlist.m3u8?vg_cp=true&channel_name=pitaaratv_ssai&ads.partner=Khabriya&ads.network_name=Khabriya
+#EXTINF:-1 tvg-id="Balleballe" tvg-chno="801" tvg-name="Balle Balle" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Balle Balle
+https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="802" tvg-name="Tabbar Hits" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Tabbar Hits
+https://stream.ottlive.co.in/tabbarhits/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="803" tvg-name="PTC Punjabi Canada" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",PTC Punjabi Canada
+https://stream.ottlive.co.in/ptccanada/index.m3u8
+#EXTINF:-1 tvg-id="Punjabi Hits" tvg-chno="804" tvg-name="Punjabi Hits" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Punjabi Hits
+https://stream.ottlive.co.in/punjabihits/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="805" tvg-name="GTC Punjabi" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",GTC Punjabi
+https://stream.ottlive.co.in/gtcpunjabi/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="807" tvg-name="Punjabi Shorts" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Punjabi Shorts
+https://stream.ottlive.co.in/punjabshort/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="809" tvg-name="Prime Asia" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Prime Asia
+https://stream.ottlive.co.in/primeasia/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="810" tvg-name="Sanjha TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Sanjha TV
+https://livestream.unlimitedcdn.com/sanjhatv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="811" tvg-name="Daily Post" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Daily Post
+https://stream.ottlive.co.in/dailypost/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="813" tvg-name="Vii Media" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Vii Media
+https://viimediacdn.wiseplayout.com/viimedia/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="814" tvg-name="Desi Channel" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Desi Channel
+https://livestream.unlimitedcdn.com/agm-dc/desi-channel/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="816" tvg-name="Gur Ki Bani " tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",Gur Ki Bani
+https://livestream.unlimitedcdn.com/gurkibani/index.m3u8
+#EXTINF:-1 tvg-id="Garv Gurbani" tvg-chno="817" tvg-name="Gurbani TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",Gurbani TV
+https://stream.ottlive.co.in/distrogarvgurbani/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="818" tvg-name="Knock Bhakti Punjabi" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",Knock Bhakti Punjabi
+https://knocktv2.wiseplayout.com/Knock_Bhakti_EST/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="819" tvg-name="GTC News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",GTC News
+https://stream.ottlive.co.in/gtcnews/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="823" tvg-name="Living India News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Living India News
+https://stream.ottlive.co.in/livingindia/index.m3u8
+#EXTINF:-1 tvg-id="Rozana Spokesman" tvg-chno="824" tvg-name="Roazana Spokesman" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Roazana Spokesman
+https://stream.ottlive.co.in/spokesman/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="826" tvg-name="The Unmute" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",The Unmute
+https://stream.ottlive.co.in/unmute/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="827" tvg-name="World Punjabi TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",World Punjabi TV
+https://stream.ottlive.co.in/worldpunjabitv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="844" tvg-name="D5 Punjabi" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",D5 Punjabi
+https://d5.tv360.ca/p/3453/live/cd5live.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="848" tvg-name="Hamdard TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Hamdard TV
+https://tv.hamdardtv.com/hamdard/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="903" tvg-name="K TV Bangla" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",K TV Bangla
+https://stream.ottlive.co.in/tribetv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="907" tvg-name="News Bartaman 24×7" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",News Bartaman 24×7
+https://stream.ottlive.co.in/cnnnews/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="923" tvg-name="R Plus Gold" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",R Plus Gold
+https://stream.ottlive.co.in/rplusgold/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1015" tvg-name="GB News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",GB News
+https://hlspackager.akamaized.net/live/DB/GB_NEWS/HLS/GB_NEWS.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1028" tvg-name="Ticker" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Ticker
+https://live-hls-7agy.livepush.io/live_abr_cdn/nsitWAl1pTZtwca/emnmZbKZcO8RfwJR/index.m3u8
+#EXTINF:-1 tvg-id="BloombergTV" tvg-chno="1031" tvg-name="Bloomberg TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Bloomberg TV
+https://m113640-fcdn.mp.lura.live/live/origin-contribution-m1-btv-plus-khabriyadigitalmedia.m3u8
+#EXTINF:-1 tvg-id="Bloomberg Originals" tvg-chno="1032" tvg-name="BTV Originals" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",BTV Originals
+https://m113640-fcdn.mp.lura.live/live/origin-contribution-m1-bloomberg-quicktake-khabriyadigitalmedia.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1034" tvg-name="CGTN Global Biz" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",CGTN Global Biz
+https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8
+#EXTINF:-1 tvg-id="CNA-singapore" tvg-chno="1036" tvg-name="CNA Singapore" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",CNA Singapore
+https://amg01082-amg01082c1-cna-worldwide-2842.playouts.now.amagi.tv/cna-cnanews-samsung/playlist.m3u8
+#EXTINF:-1 tvg-id="Arirang" tvg-chno="1037" tvg-name="Arirang TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Arirang TV
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+#EXTINF:-1 tvg-id="CGNTV" tvg-chno="1039" tvg-name="CGTN Global" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",CGTN Global
+https://english-livebkali.cgtn.com/live/encgtn_1.m3u8
+#EXTINF:-1 tvg-id="TRT-world" tvg-chno="1040" tvg-name="TRT World" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="nhk-japan" tvg-chno="1041" tvg-name="NHK World" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",NHK World
+https://media-tyo.hls.nhkworld.jp/hls/w/live/1/sig/e52230f79050aa333c4ac6430f40a08f0898e6ec1c43d5cb9bcb82f9573797c4/v2.m3u8
+#EXTINF:-1 tvg-id="RT" tvg-chno="1045" tvg-name="Russia Today " tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Russia Today
+https://streams2.sofast.tv/ptnr-khabriya/title-RT_News_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2f0357f5-9372-4de4-85e2-cf9773440958/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1048" tvg-name="i24 NEWS" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",i24 NEWS
+https://hlspackager.akamaized.net//live/DB/i24_ENGLISH/NEO/i24_ENGLISH.m3u8
+#EXTINF:-1 tvg-id="bein-xtra" tvg-chno="1118" tvg-name="beIN Sports Xtra" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",beIN Sports Xtra
+https://streams2.sofast.tv/ptnr-khabriya/title-Xtrasports_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0690efb6-aa43-44a6-94a2-cfcf4c533aa0/manifest.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1120" tvg-name="Fite TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Fite TV
+https://streams2.sofast.tv/ptnr-khabriya/title-FiteTV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/228def88-9b48-48ce-8382-1a39fe995936/manifest.m3u8
+#EXTINF:-1 tvg-id="Fight TV" tvg-chno="1121" tvg-name="Fight TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Fight TV
+https://streams2.sofast.tv/ptnr-khabriya/title-FIGHT-TV-ENG_khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/ffaa5cb7-7af7-4b01-85fc-6f903abcb0d0/manifest.m3u8
+#EXTINF:-1 tvg-id="Cricket Gold" tvg-chno="1130" tvg-name="Cricket Gold" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Cricket Gold
+https://d17d533u08po4z.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Khabriya-MuxIP-CricketGold/418.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1140" tvg-name="Sports First TV " tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Sports First TV
+https://d13f5ho7dp9xg4.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/Khabriya-MuxIP-SportsFirstTV/409.m3u8
+#EXTINF:-1 tvg-id="Goal TV" tvg-chno="1141" tvg-name="Goal TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Goal TV
+https://streams2.sofast.tv/ptnr-khabriya/title-Goal_TV_khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/42c099e0-2600-480e-827e-f0a2439d43ba/master.m3u8
+#EXTINF:-1 tvg-id="GOLF Network" tvg-chno="1142" tvg-name="GOLF Network" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",GOLF Network
+https://streams2.sofast.tv/ptnr-Khabriya/title-Golf_Network_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/0b044301-f965-424d-afed-41501b417c00/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="TRACE SPORT STARS" tvg-chno="1145" tvg-name="Trace Sports STARS" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Trace Sports STARS
+https://streams2.sofast.tv/ptnr-khabriya/title-TRACESportStars_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/5ba0c913-4b4f-4714-8ea6-bc618c602081/playlist.m3u8
+#EXTINF:-1 tvg-id="Xtreme Sports" tvg-chno="1156" tvg-name="Xtrem Sports" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Xtrem Sports
+https://streams2.sofast.tv/ptnr-khabriya/title-XTREM-SPORTS-ENG_khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/ab466b54-5b37-480a-9e53-9d9c4aaf19bc/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Nautical" tvg-chno="1157" tvg-name="Nautical" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Nautical
+https://streams2.sofast.tv/ptnr-khabriya/title-Nautical_TV_khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5a335b7-6a60-4347-b9b7-f8f3ec07b9e4/index.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="SPORT FISHING TV" tvg-chno="1158" tvg-name="SPORT FISHING TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",SPORT FISHING TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-SPORT-FISHING-TV-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dacf70d3-e385-46d2-8c33-2bdc5b729b38/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Kozoom Biliard" tvg-chno="1160" tvg-name="Kozoon Billiard" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Sports",Kozoon Billiard
+https://streams2.sofast.tv/ptnr-khabriya/title-KOZOOM-ENG_khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/482137f9-5790-4ef7-ae49-aa759c70beeb/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="BEST ACTION TV" tvg-chno="1422" tvg-name="Best Action TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Best Action TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_ACTION_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/46d81239-7803-45e2-9341-99ca0226fb62/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Tensions TV" tvg-chno="1425" tvg-name="Tensions TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Tensions TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-TENSIONS-TV-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7d22d522-68c9-4de6-87a8-6fe98c85d84e/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="wedo bigstories" tvg-chno="1426" tvg-name="WeDO BigStories" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",WeDO BigStories
+https://amg00735-amg00735c39-amgplt0835.playout.now3.amagi.tv/ts-us-w2-n1/playlist/amg00735-amg00735c39-amgplt0835/playlist.m3u8?app_bundle=com.neotvplus.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.0.0&brand_name=NeoTV%2B&channel_name=BigStories&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="SOONER%3A COMING OF AGE" tvg-chno="1428" tvg-name="Sooner Movies 1" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Sooner Movies 1
+https://streams2.sofast.tv/ptnr-Khabriya/title-Sooner_Coming_of_Age_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/6fa186f2-3df0-455e-bc0f-74b1bac2bd39/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="SOONER%3A NEXT GEN" tvg-chno="1433" tvg-name="Sooner Movies 2" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Sooner Movies 2
+https://streams2.sofast.tv/ptnr-Khabriya/title-Sooner_Next_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c9ccdc34-b7e9-4572-8258-55c09d42b47e/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="BEST THRILLER TV" tvg-chno="1442" tvg-name="BEST Thriller" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",BEST Thriller
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_THRILLER_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/32e85211-744f-490f-a5d9-e0665857a49c/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="BEST DRAMA TV" tvg-chno="1445" tvg-name="Best Drama Movies" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Best Drama Movies
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_DRAMA_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/baba2147-181a-4408-90a4-792e7a28d69b/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="space-series" tvg-chno="1447" tvg-name="Space Series" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Space Series
+https://streams2.sofast.tv/ptnr-khabriya/title-Space_Series_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7ee8933b-9e83-4cca-8264-ea0b05f386bf/manifest.m3u8
+#EXTINF:-1 tvg-id="BRAT TV" tvg-chno="1453" tvg-name="Brat TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Brat TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-BRATTV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/5db875db-cb1f-49fe-96d6-199f6a60b9a4/playlist.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="LOL TV" tvg-chno="1455" tvg-name="Lol TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Lol TV
+https://streams2.sofast.tv/ptnr-khabriya/title-LOL-TV-ENG_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9e09b0a9-155e-4a16-a48f-e52ab00ebe6f/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="USERIES" tvg-chno="1457" tvg-name="USERIES" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",USERIES
+https://streams2.sofast.tv/ptnr-Khabriya/title-USERIES-TV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/67af6275-e50d-4aaf-b3f4-ac1f4fbbe75b/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="1458" tvg-name="AWE Plus" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",AWE Plus
+https://streams2.sofast.tv/ptnr-khabriya/title-AWEPlus_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/7122edd2-f7d3-40df-a08b-0393a37bc589/playlist.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="wedo legacy" tvg-chno="1460" tvg-name="WeDO TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",WeDO TV
+https://amg00735-amg00735c80-amgplt0835.playout.now3.amagi.tv/ts-us-e2-n1/playlist/amg00735-amg00735c80-amgplt0835/playlist.m3u8?app_bundle=com.neotv.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.0.0&brand_name=NeoTV%2B&channel_name=wedolegacy&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="BEST CLASSIC TV" tvg-chno="1470" tvg-name="Best Classic Movies" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Best Classic Movies
+https://streams2.sofast.tv/ptnr-Khabriya/title-BEST_CLASSICS_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/699cd05b-c33b-4004-acf8-afd84d0ec10f/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="NYX Stralight 1" tvg-chno="1471" tvg-name="NYX Stralight 1" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",NYX Stralight 1
+https://streams2.sofast.tv/ptnr-Khabriya/title-NYX_Starlight_Eng_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/bf236695-caff-4227-b007-da4f5d05799d/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="CINEPAST" tvg-chno="1475" tvg-name="Cinepast" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Cinepast
+https://streams2.sofast.tv/ptnr-khabriya/title-CINEPAST_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/f0694c40-0a6c-4674-be47-78489fcf4ddd/manifest.m3u8
+#EXTINF:-1 tvg-id="elevation-church" tvg-chno="1480" tvg-name="Elevation Church Network" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",Elevation Church Network
+https://linear-1066.frequency.stream/dist/neotvplus/1066/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1490" tvg-name="SMTV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Religious",SMTV
+https://cf-lbs.suprememastertv.com/origin/1080p/playlist.m3u8
+#EXTINF:-1 tvg-id="San Plus" tvg-chno="1802" tvg-name="Sana Plus" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Sana Plus
+https://stream.ottlive.co.in/sanaplus/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1804" tvg-name="Subin TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Subin TV
+https://stream.ottlive.co.in/subintvtamil/index.m3u8
+#EXTINF:-1 tvg-id="RojaTV" tvg-chno="1805" tvg-name="Roja TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Roja TV
+https://hls.rojatv.cloud/rojatv/rojatv/index.m3u8
+#EXTINF:-1 tvg-id="RojaMovies" tvg-chno="1806" tvg-name="Roja Movies" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Roja Movies
+https://hls.rojatv.cloud/rojamovies/rojamovies/index.m3u8
+#EXTINF:-1 tvg-id="UTV" tvg-chno="1807" tvg-name="UTV Tamil" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",UTV Tamil
+https://stream.ottlive.co.in/utvtamil/index.m3u8
+#EXTINF:-1 tvg-id="OLI TV" tvg-chno="1808" tvg-name="Oli TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Oli TV
+https://hlslive.olidigital.in/olitv/olitv/index.m3u8
+#EXTINF:-1 tvg-id="Bongo Movies" tvg-chno="1811" tvg-name="Prime Music HD" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Prime Music HD
+https://live.primestream.in/prime/music/index.m3u8
+#EXTINF:-1 tvg-id="Tollytv" tvg-chno="1812" tvg-name="Tolly TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Tolly TV
+https://streams2.sofast.tv/ptnr-khabriya/title-TOLLY-TV-TEL_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9bb55dff-7a74-43aa-bcf7-ea537e8b9e92/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="1816" tvg-name="JJ News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",JJ News
+https://hlsstream.olidigital.in/jjtvnewstamil/jjtvnewstamil/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1822" tvg-name="Sakshi TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Sakshi TV
+https://stream.ottlive.co.in/sakshitv/index.m3u8
+#EXTINF:-1 tvg-id="Thalatv" tvg-chno="1825" tvg-name="Thalaa TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",Thalaa TV
+https://streams2.sofast.tv/ptnr-khabriya/title-THALAA-TV-TAM_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c9d5c8a0-8c52-47bc-954d-e64a11314de2/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="1826" tvg-name="Prime9 Plus" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Prime9 Plus
+https://stream.ottlive.co.in/prime9news/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1827" tvg-name="ABN AndhraJyothi" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",ABN AndhraJyothi
+https://stream.ottlive.co.in/abnandhrajyothycdn/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1828" tvg-name="4 SidesTV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",4 SidesTV
+https://stream.ottlive.co.in/4sidestv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1829" tvg-name="Metro TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Metro TV
+https://stream.ottlive.co.in/metrotv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="1852" tvg-name="NKR TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",NKR TV
+https://stream.ottlive.co.in/nkrtv/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="2100" tvg-name="Feva TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Feva TV
+https://streams2.sofast.tv/ptnr-khabriya/title-FevaTV_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9fba25cd-8df0-41fe-8eae-2b371bb4cdfd/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="2105" tvg-name="Playzi TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Playzi TV
+https://stream.playzi.tv/live/fast/chunks.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="3019" tvg-name="Now Arabic" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Now Arabic
+https://live.nowtelly.com/now_arabic/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="3034" tvg-name="RT Arabic" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",RT Arabic
+https://rt-arb.rttv.com/live/rtarab/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="4200" tvg-name="NetRadio Vision" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",NetRadio Vision
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68ae4202f523afacb5086bfa
+#EXTINF:-1 tvg-id="" tvg-chno="4202" tvg-name="Music EDM" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Music EDM
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68ae48b023fe8059c40c77ba
+#EXTINF:-1 tvg-id="" tvg-chno="4205" tvg-name="Epic Music" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Epic Music
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68ae4a5f5d0dcfc7650b1945
+#EXTINF:-1 tvg-id="" tvg-chno="4207" tvg-name="Urban Street" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Urban Street
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=689c1a152b3cb42c050fba59
+#EXTINF:-1 tvg-id="" tvg-chno="4209" tvg-name="Summer Vibes" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Summer Vibes
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AV_WIDTH=1920&AV_HEIGHT=1080&AV_APPNAME=neotv+&AV_APPPKGNAME=com.neotv.app&AVS_SSAIID=69ee044381070c5365044514
+#EXTINF:-1 tvg-id="" tvg-chno="4220" tvg-name="Rising Music" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Rising Music
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68ae46694a09d1d62507f0ff
+#EXTINF:-1 tvg-id="" tvg-chno="4230" tvg-name="Music LO-FI" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Music LO-FI
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68954484dd7915fcaf0e16b7
+#EXTINF:-1 tvg-id="StigrayClassicMusic" tvg-chno="4232" tvg-name="Stingray Classic Rock" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Stingray Classic Rock
+https://streams2.sofast.tv/ptnr-Khabriya/title-Stingray_Classic_Rock_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9dd2945c-8170-4680-a3ca-df9093e282ae/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="4232" tvg-name="Fireplace TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Fireplace TV
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=69ddbefb8506d00def01bcd5
+#EXTINF:-1 tvg-id="" tvg-chno="4244" tvg-name="Music Synthwave" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Music Synthwave
+https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=68ae4be1be827a4c180c9b25
+#EXTINF:-1 tvg-id="" tvg-chno="4245" tvg-name="Feva Music" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Music",Feva Music
+https://streams2.sofast.tv/ptnr-khabriya/title-FevaMusic_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e565b97e-2f75-4c59-a228-20094765694f/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="wedo amor" tvg-chno="5000" tvg-name="WeDO Amor" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",WeDO Amor
+https://amg00735-amg00735c24-amgplt0835.playout.now3.amagi.tv/ts-us-w2-n2/playlist/amg00735-amg00735c24-amgplt0835/playlist.m3u8?app_bundle=com.neotv.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.35&brand_name=NeoTV%2B&channel_name=wedoamor&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="UCL TV" tvg-chno="5001" tvg-name="UCL TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",UCL TV
+https://streams2.sofast.tv/ptnr-Khabriya/title-UCLTelevision_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a4d74c20-fb80-45dd-bfae-273c80e8bfd3/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="Wedotv Piel Salvaje" tvg-chno="5002" tvg-name="Wedotv Piel Salvaje" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Wedotv Piel Salvaje
+https://amg00735-amg00735c67-amgplt0835.playout.now3.amagi.tv/ts-us-e2-n2/playlist/amg00735-amg00735c67-amgplt0835/playlist.m3u8?app_bundle=com.neotv.app&app_category=Entertainment&app_domain=neotvapp.com&app_name=NeoTV%2B&app_store_url=https%3A%2F%2Fneotvapp.com&app_version=1.35&brand_name=NeoTV%2B&channel_name=wedopiel&content_livestream=1&coppa=0&dnt=0&gdpr=0&idtype=ifa&ifa_type=aaid&inv_partner_domain=neotvapp.com&lmt=0&pod_ad_slots=1&schain=&url=https%3A%2F%2Fneotvapp.com&us_privacy=1
+#EXTINF:-1 tvg-id="MI MIEDO CANAL" tvg-chno="5005" tvg-name="MI MIEDO CANAL" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",MI MIEDO CANAL
+https://streams2.sofast.tv/ptnr-Khabriya/title-MI-MIEDO-CANAL-SPA_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/f8bb58f8-8353-40bc-b67e-ebb75f90bbe8/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="MI RAZA CANAL" tvg-chno="5010" tvg-name="MI RAZA CANAL" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",MI RAZA CANAL
+https://streams2.sofast.tv/ptnr-Khabriya/title-MI-RAZA-CANAL_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1c8ad21c-5797-4ce0-bb93-30de3674f809/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="MI RAZA CANAL PLUS" tvg-chno="5015" tvg-name="MI RAZA CANAL PLUS" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",MI RAZA CANAL PLUS
+https://streams2.sofast.tv/ptnr-Khabriya/title-MI_RAZA-CANAL-plus_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbef05ab-9d6c-40b3-a367-0feb6bc1dfc0/manifest.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="NYX Stralight 2" tvg-chno="5017" tvg-name="NYX Stralight Espanol" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Movies",NYX Stralight Espanol
+https://streams2.sofast.tv/ptnr-Khabriya/title-NYX_Starlight_Spa_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8d94ac9f-22b3-4339-a9aa-1c94355006f7/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="5020" tvg-name="China en Vivo" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Travel",China en Vivo
+https://fastlive.cctvplus.com/out/v1/e5288609a5e946c2882c797ef969b826/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-chno="5200" tvg-name="RT News" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",RT News
+https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
+#EXTINF:-1 tvg-id="MARTI NOTICIAS (VOA Cuba)" tvg-chno="5505" tvg-name="MARTI VOA Cuba" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",MARTI VOA Cuba
+https://streams2.sofast.tv/ptnr-khabriya/title-MartiNoticias_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d4820bdb-c6fb-4b59-8e75-0d45ed82686a/master.m3u8?ads.app_storeid=com.neotv.app&ads.app_storeurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.neotv.app&ads.app_name=NeoTV+&ads.language=EN&ads.inapp_browser=inapp&ads.w=1080&ads.h=720&ads.os_code=2&ads.device_type_code=3&ads.us_privacy=1NYN&ads.coppa=0&ads.lmt=0
+#EXTINF:-1 tvg-id="" tvg-chno="5666" tvg-name="Now News Espanol" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="News",Now News Espanol
+https://live.nowtelly.com/now_spanish/live/playlist.m3u8
+#EXTINF:-1 tvg-id="Marc in the Dark" tvg-chno="6001" tvg-name="Marc in the Dark" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Marc in the Dark
+https://marc-wise.wiseplayout.com/MarcInTheDark/playlist.m3u8
+#EXTINF:-1 tvg-id="Quinnly TV" tvg-chno="6002" tvg-name="Quinnly TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",Quinnly TV
+https://coremedia.wiseplayout.com/live/QuinnlyTV/master.m3u8
+#EXTINF:-1 tvg-id="SilverSpur TV" tvg-chno="6003" tvg-name="SilverSpur TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",SilverSpur TV
+https://coremedia.wiseplayout.com/live/SilverspurTV/master.m3u8
+#EXTINF:-1 tvg-id="ON THE MARC TV" tvg-chno="6004" tvg-name="ON THE MARC TV" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",ON THE MARC TV
+https://marc-wise.wiseplayout.com/OnTheMarcTV/playlist.m3u8
+#EXTINF:-1 tvg-id="RGM NEWS" tvg-chno="6005" tvg-name="RGM NEWS" tvg-logo="https://tinyurl.com/mr2dec8v" group-title="Entertainment",RGM NEWS
+https://5790d294af2dc.streamlock.net/RGM/RGM/playlist.m3u8
